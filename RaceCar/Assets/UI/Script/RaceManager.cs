@@ -10,6 +10,8 @@ public class RaceManager : MonoBehaviour
     public EnemyRace EnemyRace;
     public Rigidbody EnemyRb;
     public Rigidbody PlayerRb;
+    public MuweRace EnemyMuweRace;
+    public MuweRace PlayerMuweRace;
     public GameObject BorderFinish;
 
     public Canvas Canvas;
@@ -88,7 +90,7 @@ public class RaceManager : MonoBehaviour
             }
             else if (TimeStart > 2)
             {
-                if(StartAud.isPlaying == false)
+                if (StartAud.isPlaying == false)
                     StartAud.Play();
                 Arrou.SetActive(true);
                 VirtualCamera.Priority = 1;
@@ -111,9 +113,12 @@ public class RaceManager : MonoBehaviour
         }
         else
         {
+            Test.enabled = true;
             isstart = true;
             EnemyRb.constraints = RigidbodyConstraints.None;
+            EnemyMuweRace.enabled = true;
             PlayerRb.constraints = RigidbodyConstraints.None;
+            PlayerMuweRace.enabled = true;
 
             if (StartObject.activeSelf == true)
             {
@@ -157,7 +162,7 @@ public class RaceManager : MonoBehaviour
         {
             rewardMoney = rewardMoney * 4;
         }
-        else if((_targetRotation > 15 && _targetRotation <= 65) || (_targetRotation >= -65 && _targetRotation < -15))
+        else if ((_targetRotation > 15 && _targetRotation <= 65) || (_targetRotation >= -65 && _targetRotation < -15))
         {
             rewardMoney = rewardMoney * 2;
         }

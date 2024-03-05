@@ -1,9 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UIElements;
 
 public class PartsPositionController : MonoBehaviour
 {
@@ -52,9 +49,13 @@ public class PartsPositionController : MonoBehaviour
 
         if (Mediate != null)
             Mediate.transform.position = hit.point + Mediate.transform.up / 5;
+
     }
+
     public void OnClickDown()
     {
+        ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        Physics.Raycast(ray, out hit);
         startMediate = hit.transform.gameObject;
         if (Time.time - lastClickTime < doubleClickDelay)
         {
@@ -130,7 +131,9 @@ public class PartsPositionController : MonoBehaviour
     }
     public void OnClickUp()
     {
-        if(hit.transform != null)
+        ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        Physics.Raycast(ray, out hit);
+        if (hit.transform != null)
         {
             if (Mediate != null)
             {

@@ -200,12 +200,13 @@ public class MoneyHandler : MonoBehaviour
     {
         if(IncomCount >= 4)
         {
-            moneyInSecond = moneyInSecond + (moneyInSecond * 0.25f);
+            //moneyInSecond = moneyInSecond + (moneyInSecond * 0.3f);
+            moneyInSecond = moneyInSecond + 2;
             moneyInSecond = Mathf.Clamp(moneyInSecond, 0, 1000000000000000000);
             PlayerPrefs.SetFloat("moneyInSecond", moneyInSecond);
             IncomCount = IncomCount - 4;
             EventManager.DuSetAvalebleIncpmMoney(IncomCount);
-            IncomPriece = IncomPriece + (IncomPriece * 0.25f);
+            IncomPriece = IncomPriece + (IncomPriece * 0.3f);
             IncomPriece = Mathf.Clamp(IncomPriece, 0, 1000000000000000000);
             PlayerPrefs.SetFloat("IncomPriece", IncomPriece);
             FormaterCount(Mathf.Round(IncomPriece), UIManager.IncomePrice); 
