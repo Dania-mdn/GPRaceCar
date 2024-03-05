@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 0.13
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.15808904, g: 0.17916644, b: 0.21317455, a: 0.13}
+  m_IndirectSpecularColor: {r: 0.15808904, g: 0.1791664, b: 0.21317455, a: 0.13}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -13403,12 +13403,12 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 908623665}
   - {fileID: 1907915573}
   - {fileID: 903590392}
   - {fileID: 2036999357}
   - {fileID: 1989779759}
   - {fileID: 1799222128}
+  - {fileID: 908623665}
   - {fileID: 1247258498}
   m_Father: {fileID: 0}
   m_RootOrder: 1
@@ -14285,7 +14285,7 @@ RectTransform:
   - {fileID: 2140835553}
   - {fileID: 512914093}
   m_Father: {fileID: 829760611}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -14331,7 +14331,7 @@ RectTransform:
   - {fileID: 110568553}
   - {fileID: 1608765339}
   m_Father: {fileID: 829760611}
-  m_RootOrder: 0
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -19414,7 +19414,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.28501034, g: 0.98039216, b: 0.2, a: 0.3254902}
+  m_Color: {r: 0.28501034, g: 0.98039216, b: 0.2, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -19989,10 +19989,10 @@ RectTransform:
   m_Father: {fileID: 1907915573}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 1080, y: 1920}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1271429937
 MonoBehaviour:
@@ -28990,7 +28990,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 829760611}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -29116,7 +29116,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1803175696}
   m_LocalRotation: {x: 0.5642116, y: 0.7206012, z: -0.0487858, w: -0.40002385}
-  m_LocalPosition: {x: -0.468, y: -0.111, z: -0.145}
+  m_LocalPosition: {x: -0.4555, y: -0.1096, z: -0.1336}
   m_LocalScale: {x: 0.060000002, y: 0.06000002, z: 0.060000002}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -30799,7 +30799,7 @@ RectTransform:
   - {fileID: 1381543097}
   - {fileID: 410355645}
   m_Father: {fileID: 829760611}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -32286,7 +32286,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 829760611}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -33045,7 +33045,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2036999357
 RectTransform:
   m_ObjectHideFlags: 0
@@ -33068,7 +33068,7 @@ RectTransform:
   - {fileID: 1373359399}
   - {fileID: 525615148}
   m_Father: {fileID: 829760611}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
@@ -35015,6 +35015,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4466888474540334864}
     m_Modifications:
+    - target: {fileID: 56126893385799143, guid: e98515bc8f3a1b54ca53b827b6864955,
+        type: 3}
+      propertyPath: statick
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2782083061956664143, guid: e98515bc8f3a1b54ca53b827b6864955,
         type: 3}
       propertyPath: m_ConnectedBody

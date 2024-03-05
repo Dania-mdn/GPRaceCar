@@ -18,7 +18,7 @@ public class Joystic1 : MonoBehaviour
 
         if (touchMarker.gameObject.activeSelf == true)
         {
-            if (target_vector.magnitude < 39.1f)
+            if (target_vector.magnitude < 38.5f)
             {
                 Vector3 direction = touch_pos - transform.localPosition;
                 touchMarker.transform.position = transform.localPosition + direction;
