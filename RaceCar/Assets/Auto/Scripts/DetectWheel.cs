@@ -38,10 +38,10 @@ public class DetectWheel : MonoBehaviour
         else
         {
             if (Test != null)
-                Test.bool1 = false;
+                Test.bool2 = false;
 
             if (EnemyRace != null)
-                EnemyRace.bool1 = false;
+                EnemyRace.bool2 = false;
         }
     }
 }
