@@ -1762,6 +1762,7 @@ GameObject:
   m_Component:
   - component: {fileID: 138755464}
   - component: {fileID: 138755465}
+  - component: {fileID: 138755466}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -1880,6 +1881,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &138755466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 138755462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e52b78298b070f4f84a676e70492970, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MoneyHandler: {fileID: 0}
 --- !u!1 &140472924
 GameObject:
   m_ObjectHideFlags: 0
@@ -5868,9 +5882,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 829760613}
-        m_TargetAssemblyTypeName: MoneyHandler, Assembly-CSharp
-        m_MethodName: SetRewardIncomX2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: Reward, Assembly-CSharp
+        m_MethodName: ShowAdRewardInkome
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -13558,9 +13572,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 829760613}
-        m_TargetAssemblyTypeName: MoneyHandler, Assembly-CSharp
-        m_MethodName: SetRewardAutoTap
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: Reward, Assembly-CSharp
+        m_MethodName: ShowAdRewardAutotap
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
