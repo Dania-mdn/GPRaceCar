@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 0.13
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.15808904, g: 0.1791664, b: 0.21317455, a: 0.13}
+  m_IndirectSpecularColor: {r: 0.15808904, g: 0.17916644, b: 0.21317455, a: 0.13}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1893,7 +1893,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e52b78298b070f4f84a676e70492970, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MoneyHandler: {fileID: 0}
+  MoneyHandler: {fileID: 829760613}
+  Musick: {fileID: 908623666}
 --- !u!1 &140472924
 GameObject:
   m_ObjectHideFlags: 0
@@ -3728,7 +3729,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 187, y: 141}
+  m_AnchoredPosition: {x: 187, y: 231}
   m_SizeDelta: {x: 101.48691, y: 46.806488}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &222351748
@@ -5882,9 +5883,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 138755466}
         m_TargetAssemblyTypeName: Reward, Assembly-CSharp
-        m_MethodName: ShowAdRewardInkome
+        m_MethodName: ShowAdReward
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5897,6 +5898,18 @@ MonoBehaviour:
       - m_Target: {fileID: 908623667}
         m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
         m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 829760613}
+        m_TargetAssemblyTypeName: MoneyHandler, Assembly-CSharp
+        m_MethodName: SetRewardIncomX2
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6361,7 +6374,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -186, y: 140.99994}
+  m_AnchoredPosition: {x: -186, y: 230.99988}
   m_SizeDelta: {x: 99.97583, y: 46.10959}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &410355647
@@ -7882,7 +7895,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -177, y: 139}
+  m_AnchoredPosition: {x: -177, y: 186}
   m_SizeDelta: {x: 139.50531, y: 53.895}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &512914096
@@ -13126,7 +13139,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 187, y: 144.1997}
+  m_AnchoredPosition: {x: 187, y: 234.1997}
   m_SizeDelta: {x: 101.48691, y: 46.806488}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &820164852
@@ -13266,7 +13279,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 822242842}
   m_LocalRotation: {x: -0.45782065, y: -0, z: 0.000000014901159, w: 0.8890445}
-  m_LocalPosition: {x: 0.01, y: -1.35, z: 4.63}
+  m_LocalPosition: {x: 0.01, y: -1.32, z: 5.08}
   m_LocalScale: {x: 0.48999998, y: 0.5, z: 0.37000006}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -13572,9 +13585,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 138755466}
         m_TargetAssemblyTypeName: Reward, Assembly-CSharp
-        m_MethodName: ShowAdRewardAutotap
+        m_MethodName: ShowAdReward
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -13587,6 +13600,18 @@ MonoBehaviour:
       - m_Target: {fileID: 908623667}
         m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
         m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 829760613}
+        m_TargetAssemblyTypeName: MoneyHandler, Assembly-CSharp
+        m_MethodName: SetRewardAutoTap
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -21907,7 +21932,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -186, y: 140.99994}
+  m_AnchoredPosition: {x: -186, y: 230.99988}
   m_SizeDelta: {x: 99.97583, y: 46.10959}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1381543098
@@ -23585,7 +23610,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 141.99994}
+  m_AnchoredPosition: {x: 0, y: 231.99988}
   m_SizeDelta: {x: 105.7576, y: 48.776184}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1449758757
@@ -34865,7 +34890,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -293, y: 157}
+  m_AnchoredPosition: {x: -293, y: 204}
   m_SizeDelta: {x: 160, y: 88}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2140835554

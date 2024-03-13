@@ -165,7 +165,8 @@ public class UpgradeAuto : MonoBehaviour
     }
     public void AudioMute()
     {
-        UpgradeAudio.mute = true;
+        if(UpgradeAudio !=null)
+            UpgradeAudio.mute = true;
 
         for (int i = 0; i < EngineAud.Length; i++)
         {
@@ -174,7 +175,8 @@ public class UpgradeAuto : MonoBehaviour
     }
     public void AudioPlay()
     {
-        UpgradeAudio.mute = false;
+        if(UpgradeAudio != null)
+            UpgradeAudio.mute = false;
 
         for (int i = 0; i < EngineAud.Length; i++)
         {

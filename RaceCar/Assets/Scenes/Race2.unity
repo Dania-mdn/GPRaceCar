@@ -3836,6 +3836,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 334853751}
+  - component: {fileID: 334853752}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -3861,6 +3862,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &334853752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 334853750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e52b78298b070f4f84a676e70492970, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MoneyHandler: {fileID: 0}
 --- !u!1 &339604528
 GameObject:
   m_ObjectHideFlags: 0
@@ -3944,9 +3958,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 601112540}
-        m_TargetAssemblyTypeName: RaceManager, Assembly-CSharp
-        m_MethodName: retryScene
+      - m_Target: {fileID: 334853752}
+        m_TargetAssemblyTypeName: Reward, Assembly-CSharp
+        m_MethodName: ShowAdReward
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3959,6 +3973,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1144274280}
         m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
         m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 601112540}
+        m_TargetAssemblyTypeName: RaceManager, Assembly-CSharp
+        m_MethodName: retryScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -18488,9 +18514,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 601112540}
-        m_TargetAssemblyTypeName: RaceManager, Assembly-CSharp
-        m_MethodName: RewardXmonney
+      - m_Target: {fileID: 334853752}
+        m_TargetAssemblyTypeName: Reward, Assembly-CSharp
+        m_MethodName: ShowAdReward
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -18503,6 +18529,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1144274280}
         m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
         m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 601112540}
+        m_TargetAssemblyTypeName: RaceManager, Assembly-CSharp
+        m_MethodName: RewardXmonney
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

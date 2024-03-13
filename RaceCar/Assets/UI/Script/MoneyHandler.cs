@@ -57,6 +57,7 @@ public class MoneyHandler : MonoBehaviour
                 money = PlayerPrefs.GetFloat("money") + PlayerPrefs.GetFloat("rewardMoney");
                 UIManager.RaceText.gameObject.GetComponent<Animation>().Play();
                 FormaterCount1(Mathf.Round(PlayerPrefs.GetFloat("rewardMoney")), UIManager.RaceText);
+                PlayerPrefs.DeleteKey("rewardMoney");
             }
             else
             {
