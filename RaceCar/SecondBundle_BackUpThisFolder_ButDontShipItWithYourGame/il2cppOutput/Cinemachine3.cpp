@@ -54,24 +54,13 @@ struct InterfaceActionInvoker3
 		((Action)invokeData.methodPtr)(obj, p1, p2, p3, invokeData.method);
 	}
 };
-template <typename T1>
-struct InvokerActionInvoker1;
-template <typename T1>
-struct InvokerActionInvoker1<T1*>
-{
-	static inline void Invoke (Il2CppMethodPointer methodPtr, const RuntimeMethod* method, void* obj, T1* p1)
-	{
-		void* params[1] = { p1 };
-		method->invoker_method(methodPtr, method, obj, params, params[0]);
-	}
-};
 
 // System.Collections.Generic.Dictionary`2<Cinemachine.ICinemachineCamera,System.Object>
 struct Dictionary_2_t4FF21A84FE740BDEF33FFAA0162AAAADBA3DEB56;
 // System.Collections.Generic.Dictionary`2<UnityEngine.Transform,Cinemachine.TargetPositionCache/CacheEntry>
 struct Dictionary_2_t29F94820877E2B83E48075DD7E4FB54F414D1F35;
-// System.Collections.Generic.IComparer`1<Unity.IL2CPP.Metadata.__Il2CppFullySharedGenericType>
-struct IComparer_1_tCA720E7837F12C38065A4AB632B5FAAD19EC30AA;
+// System.Collections.Generic.IComparer`1<System.Object>
+struct IComparer_1_tC0A12A847AF97F369A5CE9A0CCE71CE18EE1440E;
 // System.Collections.Generic.IComparer`1<Cinemachine.ClipperLib/IntersectNode>
 struct IComparer_1_t43E5048FA5A8274BEEB0DBB952999FA8436FBF55;
 // System.Collections.Generic.List`1<System.Collections.Generic.List`1<Cinemachine.ClipperLib/IntPoint>>
@@ -80,8 +69,8 @@ struct List_1_tD3D80A48908E0B8646110C913780E72E2157A541;
 struct List_1_t79AD4ED63DA2970BB638F8061040C4C26CDE9C8E;
 // System.Collections.Generic.List`1<Cinemachine.CinemachineExtension>
 struct List_1_tF512ECCA426FF10471372F52B5C8784FC96A7EAC;
-// System.Collections.Generic.List`1<Unity.IL2CPP.Metadata.__Il2CppFullySharedGenericType>
-struct List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A;
+// System.Collections.Generic.List`1<System.Object>
+struct List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D;
 // System.Collections.Generic.List`1<Cinemachine.CameraState/CustomBlendable>
 struct List_1_tECB13E82883EA864AEBA60A256302E1C8CFD6EF4;
 // System.Collections.Generic.List`1<Cinemachine.CinemachineImpulseManager/ImpulseEvent>
@@ -106,12 +95,12 @@ struct List_1U5BU5D_t2B7FAD8DF532E41E1F2DAC9BD681FB1EABEAD1D3;
 struct AnimationCurveU5BU5D_t2C4A38D7EFA8095F32316A4D9CE4CBB6840FB7EC;
 // System.IntPtr[]
 struct IntPtrU5BU5D_tFD177F8C806A6921AD7150264CCC62FA00CAD832;
+// System.Object[]
+struct ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918;
 // System.Diagnostics.StackTrace[]
 struct StackTraceU5BU5D_t32FBCB20930EAF5BAE3F450FF75228E5450DA0DF;
 // System.String[]
 struct StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248;
-// Unity.IL2CPP.Metadata.__Il2CppFullySharedGenericType[]
-struct __Il2CppFullySharedGenericTypeU5BU5D_tCAB6D060972DD49223A834B7EEFEB9FE2D003BEC;
 // Cinemachine.CinemachineCore/Stage[]
 struct StageU5BU5D_tF198CE3C6DE5C3D67552DAB4B9680F3BFF319981;
 // Cinemachine.CinemachineImpulseManager/ImpulseEvent[]
@@ -341,7 +330,8 @@ struct AnimationCurve_tCBFFAAD05CEBB35EF8D8631BD99914BE1A6BB354_marshaled_pinvok
 struct Exception_t_marshaled_com;
 struct Exception_t_marshaled_pinvoke;
 
-struct __Il2CppFullySharedGenericTypeU5BU5D_tCAB6D060972DD49223A834B7EEFEB9FE2D003BEC;
+struct ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918;
+struct IntPointU5BU5D_t7B403FCBEBD7A3039D08F8F48FEDD0295B7FFD13;
 struct OutPtU5BU5D_t4AF6E185F465F07282FCB79218DBD346626C8FD2;
 struct TransformNoiseParamsU5BU5D_tF60A55DA82A2705F76287D97294759C1F37888A1;
 
@@ -392,11 +382,11 @@ struct List_1_t79AD4ED63DA2970BB638F8061040C4C26CDE9C8E_StaticFields
 	List_1U5BU5D_t2B7FAD8DF532E41E1F2DAC9BD681FB1EABEAD1D3* ___s_emptyArray_5;
 };
 
-// System.Collections.Generic.List`1<Unity.IL2CPP.Metadata.__Il2CppFullySharedGenericType>
-struct List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A  : public RuntimeObject
+// System.Collections.Generic.List`1<System.Object>
+struct List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D  : public RuntimeObject
 {
 	// T[] System.Collections.Generic.List`1::_items
-	__Il2CppFullySharedGenericTypeU5BU5D_tCAB6D060972DD49223A834B7EEFEB9FE2D003BEC* ____items_1;
+	ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ____items_1;
 	// System.Int32 System.Collections.Generic.List`1::_size
 	int32_t ____size_2;
 	// System.Int32 System.Collections.Generic.List`1::_version
@@ -405,10 +395,10 @@ struct List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A  : public RuntimeObject
 	RuntimeObject* ____syncRoot_4;
 };
 
-struct List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A_StaticFields
+struct List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D_StaticFields
 {
 	// T[] System.Collections.Generic.List`1::s_emptyArray
-	__Il2CppFullySharedGenericTypeU5BU5D_tCAB6D060972DD49223A834B7EEFEB9FE2D003BEC* ___s_emptyArray_5;
+	ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___s_emptyArray_5;
 };
 
 // System.Collections.Generic.List`1<Cinemachine.CinemachineImpulseManager/ImpulseEvent>
@@ -712,8 +702,18 @@ struct Enumerator_t81E7BC2C4AFB10AD8941F6F9BF613541A749A9C5
 	List_1_tFFB65DC939B85D88A1FA5032C24DA82DD9685B4C* ____current_3;
 };
 
-// System.Collections.Generic.List`1/Enumerator<Unity.IL2CPP.Metadata.__Il2CppFullySharedGenericType>
-typedef Il2CppFullySharedGenericStruct Enumerator_tF5AC6CD19D283FBD724440520CEE68FE2602F7AF;
+// System.Collections.Generic.List`1/Enumerator<System.Object>
+struct Enumerator_t9473BAB568A27E2339D48C1F91319E0F6D244D7A 
+{
+	// System.Collections.Generic.List`1<T> System.Collections.Generic.List`1/Enumerator::_list
+	List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* ____list_0;
+	// System.Int32 System.Collections.Generic.List`1/Enumerator::_index
+	int32_t ____index_1;
+	// System.Int32 System.Collections.Generic.List`1/Enumerator::_version
+	int32_t ____version_2;
+	// T System.Collections.Generic.List`1/Enumerator::_current
+	RuntimeObject* ____current_3;
+};
 
 // System.Collections.Generic.List`1/Enumerator<Cinemachine.ClipperLib/OutRec>
 struct Enumerator_tC49E999203D4120E877CA9F8F56707B78DD31B74 
@@ -1852,19 +1852,72 @@ struct OutPtU5BU5D_t4AF6E185F465F07282FCB79218DBD346626C8FD2  : public RuntimeAr
 		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
 	}
 };
-// Unity.IL2CPP.Metadata.__Il2CppFullySharedGenericType[]
-struct __Il2CppFullySharedGenericTypeU5BU5D_tCAB6D060972DD49223A834B7EEFEB9FE2D003BEC  : public RuntimeArray
+// System.Object[]
+struct ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918  : public RuntimeArray
 {
-	ALIGN_FIELD (8) uint8_t m_Items[1];
+	ALIGN_FIELD (8) RuntimeObject* m_Items[1];
 
-	inline uint8_t* GetAddressAt(il2cpp_array_size_t index)
+	inline RuntimeObject* GetAt(il2cpp_array_size_t index) const
 	{
 		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
-		return m_Items + il2cpp_array_calc_byte_offset(this, index);
+		return m_Items[index];
 	}
-	inline uint8_t* GetAddressAtUnchecked(il2cpp_array_size_t index)
+	inline RuntimeObject** GetAddressAt(il2cpp_array_size_t index)
 	{
-		return m_Items + il2cpp_array_calc_byte_offset(this, index);
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, RuntimeObject* value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+	inline RuntimeObject* GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline RuntimeObject** GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, RuntimeObject* value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+};
+// Cinemachine.ClipperLib/IntPoint[]
+struct IntPointU5BU5D_t7B403FCBEBD7A3039D08F8F48FEDD0295B7FFD13  : public RuntimeArray
+{
+	ALIGN_FIELD (8) IntPoint_tB90EC7E3658ADAC927B4405BEFE1CBAD98BBC674 m_Items[1];
+
+	inline IntPoint_tB90EC7E3658ADAC927B4405BEFE1CBAD98BBC674 GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline IntPoint_tB90EC7E3658ADAC927B4405BEFE1CBAD98BBC674* GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, IntPoint_tB90EC7E3658ADAC927B4405BEFE1CBAD98BBC674 value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+	}
+	inline IntPoint_tB90EC7E3658ADAC927B4405BEFE1CBAD98BBC674 GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline IntPoint_tB90EC7E3658ADAC927B4405BEFE1CBAD98BBC674* GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, IntPoint_tB90EC7E3658ADAC927B4405BEFE1CBAD98BBC674 value)
+	{
+		m_Items[index] = value;
 	}
 };
 
@@ -1875,36 +1928,56 @@ IL2CPP_EXTERN_C void AnimationCurve_tCBFFAAD05CEBB35EF8D8631BD99914BE1A6BB354_ma
 IL2CPP_EXTERN_C void AnimationCurve_tCBFFAAD05CEBB35EF8D8631BD99914BE1A6BB354_marshal_com_back(const AnimationCurve_tCBFFAAD05CEBB35EF8D8631BD99914BE1A6BB354_marshaled_com& marshaled, AnimationCurve_tCBFFAAD05CEBB35EF8D8631BD99914BE1A6BB354& unmarshaled);
 IL2CPP_EXTERN_C void AnimationCurve_tCBFFAAD05CEBB35EF8D8631BD99914BE1A6BB354_marshal_com_cleanup(AnimationCurve_tCBFFAAD05CEBB35EF8D8631BD99914BE1A6BB354_marshaled_com& marshaled);
 
-// System.Int32 System.Collections.Generic.List`1<Unity.IL2CPP.Metadata.__Il2CppFullySharedGenericType>::get_Count()
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t List_1_get_Count_mD2ED26ACAF3BAF386FFEA83893BA51DB9FD8BA30_gshared_inline (List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A* __this, const RuntimeMethod* method) ;
-// T System.Collections.Generic.List`1<Unity.IL2CPP.Metadata.__Il2CppFullySharedGenericType>::get_Item(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1_get_Item_m6E4BA37C1FB558E4A62AE4324212E45D09C5C937_gshared (List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A* __this, int32_t ___index0, Il2CppFullySharedGenericAny* il2cppRetVal, const RuntimeMethod* method) ;
-// System.Void System.Collections.Generic.List`1<Unity.IL2CPP.Metadata.__Il2CppFullySharedGenericType>::RemoveAt(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1_RemoveAt_mF6C23E9072D8CBE2872705E7E4D08BDB78770F5C_gshared (List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A* __this, int32_t ___index0, const RuntimeMethod* method) ;
-// System.Void System.Collections.Generic.List`1<Unity.IL2CPP.Metadata.__Il2CppFullySharedGenericType>::.ctor()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1__ctor_m0AFBAEA7EC427E32CC9CA267B1930DC5DF67A374_gshared (List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A* __this, const RuntimeMethod* method) ;
-// System.Void System.Collections.Generic.List`1<Unity.IL2CPP.Metadata.__Il2CppFullySharedGenericType>::Add(T)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Add_mD4F3498FBD3BDD3F03CBCFB38041CBAC9C28CAFC_gshared_inline (List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A* __this, /*Unity.IL2CPP.Metadata.__Il2CppFullySharedGenericType*/Il2CppFullySharedGenericAny ___item0, const RuntimeMethod* method) ;
-// System.Void System.Collections.Generic.List`1<Unity.IL2CPP.Metadata.__Il2CppFullySharedGenericType>::Clear()
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Clear_mD615D1BCB2C9DD91DAD86A2F9E5CF1DFFCBF7925_gshared_inline (List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A* __this, const RuntimeMethod* method) ;
-// System.Void System.Collections.Generic.List`1<Unity.IL2CPP.Metadata.__Il2CppFullySharedGenericType>::set_Item(System.Int32,T)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1_set_Item_m9A958091885CC5363CCFE9F0BC472EAFCB56C813_gshared (List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A* __this, int32_t ___index0, /*Unity.IL2CPP.Metadata.__Il2CppFullySharedGenericType*/Il2CppFullySharedGenericAny ___value1, const RuntimeMethod* method) ;
-// System.Void System.Collections.Generic.List`1<Unity.IL2CPP.Metadata.__Il2CppFullySharedGenericType>::.ctor(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1__ctor_m3069CACB5775E013107F559C825422266A09F9E8_gshared (List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A* __this, int32_t ___capacity0, const RuntimeMethod* method) ;
-// System.Collections.Generic.List`1/Enumerator<T> System.Collections.Generic.List`1<Unity.IL2CPP.Metadata.__Il2CppFullySharedGenericType>::GetEnumerator()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1_GetEnumerator_m8B2A92ACD4FBA5FBDC3F6F4F5C23A0DDF491DA61_gshared (List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A* __this, Enumerator_tF5AC6CD19D283FBD724440520CEE68FE2602F7AF* il2cppRetVal, const RuntimeMethod* method) ;
-// System.Void System.Collections.Generic.List`1/Enumerator<Unity.IL2CPP.Metadata.__Il2CppFullySharedGenericType>::Dispose()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_Dispose_mFE1EBE6F6425283FEAEAE7C79D02CDE4F9D367E8_gshared (Enumerator_tF5AC6CD19D283FBD724440520CEE68FE2602F7AF* __this, const RuntimeMethod* method) ;
-// T System.Collections.Generic.List`1/Enumerator<Unity.IL2CPP.Metadata.__Il2CppFullySharedGenericType>::get_Current()
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Enumerator_get_Current_m8B42D4B2DE853B9D11B997120CD0228D4780E394_gshared_inline (Enumerator_tF5AC6CD19D283FBD724440520CEE68FE2602F7AF* __this, Il2CppFullySharedGenericAny* il2cppRetVal, const RuntimeMethod* method) ;
-// System.Boolean System.Collections.Generic.List`1/Enumerator<Unity.IL2CPP.Metadata.__Il2CppFullySharedGenericType>::MoveNext()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m8D8E5E878AF0A88A535AB1AB5BA4F23E151A678A_gshared (Enumerator_tF5AC6CD19D283FBD724440520CEE68FE2602F7AF* __this, const RuntimeMethod* method) ;
-// System.Void System.Collections.Generic.List`1<Unity.IL2CPP.Metadata.__Il2CppFullySharedGenericType>::Sort(System.Collections.Generic.IComparer`1<T>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1_Sort_mCBEFEE4479438557E591F7AEF3BFDE2297DA269D_gshared (List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A* __this, RuntimeObject* ___comparer0, const RuntimeMethod* method) ;
-// System.Void System.Collections.Generic.List`1<Unity.IL2CPP.Metadata.__Il2CppFullySharedGenericType>::Reverse()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1_Reverse_m31924FC6445F9A1633DA40A8930F89E271B477F2_gshared (List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A* __this, const RuntimeMethod* method) ;
-// System.Void System.Collections.Generic.List`1<Unity.IL2CPP.Metadata.__Il2CppFullySharedGenericType>::set_Capacity(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1_set_Capacity_mD365C22FA3D32D70A2088AB13116E7BA5FBF0BFB_gshared (List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A* __this, int32_t ___value0, const RuntimeMethod* method) ;
+// System.Int32 System.Collections.Generic.List`1<System.Object>::get_Count()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t List_1_get_Count_m4407E4C389F22B8CEC282C15D56516658746C383_gshared_inline (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, const RuntimeMethod* method) ;
+// T System.Collections.Generic.List`1<System.Object>::get_Item(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* List_1_get_Item_m33561245D64798C2AB07584C0EC4F240E4839A38_gshared (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, int32_t ___index0, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.List`1<System.Object>::RemoveAt(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1_RemoveAt_m54F62297ADEE4D4FDA697F49ED807BF901201B54_gshared (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, int32_t ___index0, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.List`1<System.Object>::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1__ctor_m7F078BB342729BDF11327FD89D7872265328F690_gshared (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.List`1<System.Object>::Add(T)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Add_mEBCF994CC3814631017F46A387B1A192ED6C85C7_gshared_inline (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, RuntimeObject* ___item0, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.List`1<System.Object>::Clear()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Clear_m16C1F2C61FED5955F10EB36BC1CB2DF34B128994_gshared_inline (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.List`1<System.Object>::set_Item(System.Int32,T)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1_set_Item_m3C58DBC69A321AF2826595584FF3E9F43C07EA56_gshared (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, int32_t ___index0, RuntimeObject* ___value1, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.List`1<Cinemachine.ClipperLib/IntPoint>::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1__ctor_m32AB5B53E1EAEF533CB62F1909BECF6C01854CB9_gshared (List_1_tFFB65DC939B85D88A1FA5032C24DA82DD9685B4C* __this, const RuntimeMethod* method) ;
+// System.Int32 System.Collections.Generic.List`1<Cinemachine.ClipperLib/IntPoint>::get_Count()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t List_1_get_Count_m578BA59F69944F4E5EB262CFC17DCD1FB6F4610D_gshared_inline (List_1_tFFB65DC939B85D88A1FA5032C24DA82DD9685B4C* __this, const RuntimeMethod* method) ;
+// T System.Collections.Generic.List`1<Cinemachine.ClipperLib/IntPoint>::get_Item(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR IntPoint_tB90EC7E3658ADAC927B4405BEFE1CBAD98BBC674 List_1_get_Item_m24B912BEB96018A91FE32A68BF3CF2B9602EA36F_gshared (List_1_tFFB65DC939B85D88A1FA5032C24DA82DD9685B4C* __this, int32_t ___index0, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.List`1<System.Object>::.ctor(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1__ctor_m76CBBC3E2F0583F5AD30CE592CEA1225C06A0428_gshared (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, int32_t ___capacity0, const RuntimeMethod* method) ;
+// System.Collections.Generic.List`1/Enumerator<T> System.Collections.Generic.List`1<System.Object>::GetEnumerator()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Enumerator_t9473BAB568A27E2339D48C1F91319E0F6D244D7A List_1_GetEnumerator_mD8294A7FA2BEB1929487127D476F8EC1CDC23BFC_gshared (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.List`1/Enumerator<System.Object>::Dispose()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_Dispose_mD9DC3E3C3697830A4823047AB29A77DBBB5ED419_gshared (Enumerator_t9473BAB568A27E2339D48C1F91319E0F6D244D7A* __this, const RuntimeMethod* method) ;
+// T System.Collections.Generic.List`1/Enumerator<System.Object>::get_Current()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_get_Current_m6330F15D18EE4F547C05DF9BF83C5EB710376027_gshared_inline (Enumerator_t9473BAB568A27E2339D48C1F91319E0F6D244D7A* __this, const RuntimeMethod* method) ;
+// System.Boolean System.Collections.Generic.List`1/Enumerator<System.Object>::MoveNext()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mE921CC8F29FBBDE7CC3209A0ED0D921D58D00BCB_gshared (Enumerator_t9473BAB568A27E2339D48C1F91319E0F6D244D7A* __this, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.List`1<System.Object>::Sort(System.Collections.Generic.IComparer`1<T>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1_Sort_m4204C143D97E871DF2553329CFB0FBE3CD1A01F2_gshared (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, RuntimeObject* ___comparer0, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.List`1<Cinemachine.ClipperLib/IntPoint>::Reverse()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1_Reverse_mF0F13BCF460823FB136A0964BA8A8E3B30CAB5C9_gshared (List_1_tFFB65DC939B85D88A1FA5032C24DA82DD9685B4C* __this, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.List`1<System.Object>::set_Capacity(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1_set_Capacity_mD826E33A9E5EBC19C714653217071790693E0B95_gshared (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, int32_t ___value0, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.List`1<Cinemachine.ClipperLib/IntPoint>::.ctor(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1__ctor_m0C9FCAA3EEB3FA8D74A57EB3231442F5F0949DC6_gshared (List_1_tFFB65DC939B85D88A1FA5032C24DA82DD9685B4C* __this, int32_t ___capacity0, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.List`1<Cinemachine.ClipperLib/IntPoint>::Add(T)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Add_m1892D847DB76252F6D5CA3132FE4ADBFFB0DDFA0_gshared_inline (List_1_tFFB65DC939B85D88A1FA5032C24DA82DD9685B4C* __this, IntPoint_tB90EC7E3658ADAC927B4405BEFE1CBAD98BBC674 ___item0, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.List`1<Cinemachine.ClipperLib/IntPoint>::set_Capacity(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1_set_Capacity_m4B1A8AFCE2BEE0C3570F54204394D25D1235F9CF_gshared (List_1_tFFB65DC939B85D88A1FA5032C24DA82DD9685B4C* __this, int32_t ___value0, const RuntimeMethod* method) ;
+// System.Collections.Generic.List`1/Enumerator<T> System.Collections.Generic.List`1<Cinemachine.ClipperLib/IntPoint>::GetEnumerator()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Enumerator_t9E0D8EE0EDB0F1F12A6981C83753D9E092808962 List_1_GetEnumerator_m431571965931B9D9656C6613ED2EE2E912470391_gshared (List_1_tFFB65DC939B85D88A1FA5032C24DA82DD9685B4C* __this, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.List`1/Enumerator<Cinemachine.ClipperLib/IntPoint>::Dispose()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_Dispose_m5132A9DF2D1F5250D634AE2F70D33ABD5CB6AC07_gshared (Enumerator_t9E0D8EE0EDB0F1F12A6981C83753D9E092808962* __this, const RuntimeMethod* method) ;
+// T System.Collections.Generic.List`1/Enumerator<Cinemachine.ClipperLib/IntPoint>::get_Current()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR IntPoint_tB90EC7E3658ADAC927B4405BEFE1CBAD98BBC674 Enumerator_get_Current_m7D47AD25A21E7264157F103EA884650BD80D14C6_gshared_inline (Enumerator_t9E0D8EE0EDB0F1F12A6981C83753D9E092808962* __this, const RuntimeMethod* method) ;
+// System.Boolean System.Collections.Generic.List`1/Enumerator<Cinemachine.ClipperLib/IntPoint>::MoveNext()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mA77C6E4D82FD348053E6FFB11D2BA1A40EAF2208_gshared (Enumerator_t9E0D8EE0EDB0F1F12A6981C83753D9E092808962* __this, const RuntimeMethod* method) ;
 
 // System.Void System.Object::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2 (RuntimeObject* __this, const RuntimeMethod* method) ;
@@ -1989,33 +2062,31 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float SplineHelpers_Bezier1_m246A08965553DC26
 // System.Int32 System.Collections.Generic.List`1<Cinemachine.CinemachineImpulseManager/ImpulseEvent>::get_Count()
 inline int32_t List_1_get_Count_m72857760A633DF106389E4F0D286B279F72BF515_inline (List_1_t0EB1E63A5485B6AA5D47FE017C2ACC80AC10A529* __this, const RuntimeMethod* method)
 {
-	return ((  int32_t (*) (List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*, const RuntimeMethod*))List_1_get_Count_mD2ED26ACAF3BAF386FFEA83893BA51DB9FD8BA30_gshared_inline)((List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*)__this, method);
+	return ((  int32_t (*) (List_1_t0EB1E63A5485B6AA5D47FE017C2ACC80AC10A529*, const RuntimeMethod*))List_1_get_Count_m4407E4C389F22B8CEC282C15D56516658746C383_gshared_inline)(__this, method);
 }
 // T System.Collections.Generic.List`1<Cinemachine.CinemachineImpulseManager/ImpulseEvent>::get_Item(System.Int32)
 inline ImpulseEvent_t47B7A7F746F12CA62759422A5F71DBBD4C53DC59* List_1_get_Item_m1243A00DD59758A177736939D0225376A8104E3D (List_1_t0EB1E63A5485B6AA5D47FE017C2ACC80AC10A529* __this, int32_t ___index0, const RuntimeMethod* method)
 {
-	ImpulseEvent_t47B7A7F746F12CA62759422A5F71DBBD4C53DC59* il2cppRetVal;
-	((  void (*) (List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*, int32_t, Il2CppFullySharedGenericAny*, const RuntimeMethod*))List_1_get_Item_m6E4BA37C1FB558E4A62AE4324212E45D09C5C937_gshared)((List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*)__this, ___index0, (Il2CppFullySharedGenericAny*)&il2cppRetVal, method);
-	return il2cppRetVal;
+	return ((  ImpulseEvent_t47B7A7F746F12CA62759422A5F71DBBD4C53DC59* (*) (List_1_t0EB1E63A5485B6AA5D47FE017C2ACC80AC10A529*, int32_t, const RuntimeMethod*))List_1_get_Item_m33561245D64798C2AB07584C0EC4F240E4839A38_gshared)(__this, ___index0, method);
 }
 // System.Boolean Cinemachine.CinemachineImpulseManager/ImpulseEvent::get_Expired()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ImpulseEvent_get_Expired_mCA721141A1BF8EABF33B58335F3BF081EE517160 (ImpulseEvent_t47B7A7F746F12CA62759422A5F71DBBD4C53DC59* __this, const RuntimeMethod* method) ;
 // System.Void System.Collections.Generic.List`1<Cinemachine.CinemachineImpulseManager/ImpulseEvent>::RemoveAt(System.Int32)
 inline void List_1_RemoveAt_m32A69CBC1233D343A53384C4CFA27F2752C88CE8 (List_1_t0EB1E63A5485B6AA5D47FE017C2ACC80AC10A529* __this, int32_t ___index0, const RuntimeMethod* method)
 {
-	((  void (*) (List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*, int32_t, const RuntimeMethod*))List_1_RemoveAt_mF6C23E9072D8CBE2872705E7E4D08BDB78770F5C_gshared)((List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*)__this, ___index0, method);
+	((  void (*) (List_1_t0EB1E63A5485B6AA5D47FE017C2ACC80AC10A529*, int32_t, const RuntimeMethod*))List_1_RemoveAt_m54F62297ADEE4D4FDA697F49ED807BF901201B54_gshared)(__this, ___index0, method);
 }
 // System.Void System.Collections.Generic.List`1<Cinemachine.CinemachineImpulseManager/ImpulseEvent>::.ctor()
 inline void List_1__ctor_m509AD93C52D556C90659A1D2169BD9465FEBE3A6 (List_1_t0EB1E63A5485B6AA5D47FE017C2ACC80AC10A529* __this, const RuntimeMethod* method)
 {
-	((  void (*) (List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*, const RuntimeMethod*))List_1__ctor_m0AFBAEA7EC427E32CC9CA267B1930DC5DF67A374_gshared)((List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*)__this, method);
+	((  void (*) (List_1_t0EB1E63A5485B6AA5D47FE017C2ACC80AC10A529*, const RuntimeMethod*))List_1__ctor_m7F078BB342729BDF11327FD89D7872265328F690_gshared)(__this, method);
 }
 // System.Void Cinemachine.CinemachineImpulseManager/ImpulseEvent::Clear()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ImpulseEvent_Clear_mBE18EB8EBB0F8F266AB084B44307155CE823C17A (ImpulseEvent_t47B7A7F746F12CA62759422A5F71DBBD4C53DC59* __this, const RuntimeMethod* method) ;
 // System.Void System.Collections.Generic.List`1<Cinemachine.CinemachineImpulseManager/ImpulseEvent>::Add(T)
 inline void List_1_Add_m377C03D36224B5F9483C43D81AD70FA5E7673057_inline (List_1_t0EB1E63A5485B6AA5D47FE017C2ACC80AC10A529* __this, ImpulseEvent_t47B7A7F746F12CA62759422A5F71DBBD4C53DC59* ___item0, const RuntimeMethod* method)
 {
-	((  void (*) (List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*, /*Unity.IL2CPP.Metadata.__Il2CppFullySharedGenericType*/Il2CppFullySharedGenericAny, const RuntimeMethod*))List_1_Add_mD4F3498FBD3BDD3F03CBCFB38041CBAC9C28CAFC_gshared_inline)((List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*)__this, (Il2CppFullySharedGenericAny)___item0, method);
+	((  void (*) (List_1_t0EB1E63A5485B6AA5D47FE017C2ACC80AC10A529*, ImpulseEvent_t47B7A7F746F12CA62759422A5F71DBBD4C53DC59*, const RuntimeMethod*))List_1_Add_mEBCF994CC3814631017F46A387B1A192ED6C85C7_gshared_inline)(__this, ___item0, method);
 }
 // System.Boolean Cinemachine.CinemachineImpulseManager/ImpulseEvent::GetDecayedSignal(UnityEngine.Vector3,System.Boolean,UnityEngine.Vector3&,UnityEngine.Quaternion&)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ImpulseEvent_GetDecayedSignal_m0A606723EF1C6867ECAC33BBBDCE4826BE5AB78F (ImpulseEvent_t47B7A7F746F12CA62759422A5F71DBBD4C53DC59* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___listenerPosition0, bool ___use2D1, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___pos2, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974* ___rot3, const RuntimeMethod* method) ;
@@ -2028,7 +2099,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float CinemachineImpulseManager_get_CurrentTi
 // System.Void System.Collections.Generic.List`1<Cinemachine.CinemachineImpulseManager/ImpulseEvent>::Clear()
 inline void List_1_Clear_m49C184BEA4867CB04DF2D0836573D52B0F0203E1_inline (List_1_t0EB1E63A5485B6AA5D47FE017C2ACC80AC10A529* __this, const RuntimeMethod* method)
 {
-	((  void (*) (List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*, const RuntimeMethod*))List_1_Clear_mD615D1BCB2C9DD91DAD86A2F9E5CF1DFFCBF7925_gshared_inline)((List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*)__this, method);
+	((  void (*) (List_1_t0EB1E63A5485B6AA5D47FE017C2ACC80AC10A529*, const RuntimeMethod*))List_1_Clear_m16C1F2C61FED5955F10EB36BC1CB2DF34B128994_gshared_inline)(__this, method);
 }
 // System.Int32 UnityEngine.AnimationCurve::get_length()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t AnimationCurve_get_length_m259A67BB0870D3A153F6FEDBB06CB0D24089CD81 (AnimationCurve_tCBFFAAD05CEBB35EF8D8631BD99914BE1A6BB354* __this, const RuntimeMethod* method) ;
@@ -2097,36 +2168,34 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DoublePoint__ctor_mC072F91863E140D4884B3
 // System.Void System.Collections.Generic.List`1<Cinemachine.ClipperLib/PolyNode>::set_Item(System.Int32,T)
 inline void List_1_set_Item_m71F5F51057EA215E366D07697A324759482B9112 (List_1_t6B363664E747D5A84578F8282376CB04CDF801F4* __this, int32_t ___index0, PolyNode_t6632AEAB07BC9B993428D4EE7C9E18EDCE3BAD27* ___value1, const RuntimeMethod* method)
 {
-	((  void (*) (List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*, int32_t, /*Unity.IL2CPP.Metadata.__Il2CppFullySharedGenericType*/Il2CppFullySharedGenericAny, const RuntimeMethod*))List_1_set_Item_m9A958091885CC5363CCFE9F0BC472EAFCB56C813_gshared)((List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*)__this, ___index0, (Il2CppFullySharedGenericAny)___value1, method);
+	((  void (*) (List_1_t6B363664E747D5A84578F8282376CB04CDF801F4*, int32_t, PolyNode_t6632AEAB07BC9B993428D4EE7C9E18EDCE3BAD27*, const RuntimeMethod*))List_1_set_Item_m3C58DBC69A321AF2826595584FF3E9F43C07EA56_gshared)(__this, ___index0, ___value1, method);
 }
 // System.Int32 System.Collections.Generic.List`1<Cinemachine.ClipperLib/PolyNode>::get_Count()
 inline int32_t List_1_get_Count_mE2AED8F1769721E45A0D4210623D84E28EA39EBD_inline (List_1_t6B363664E747D5A84578F8282376CB04CDF801F4* __this, const RuntimeMethod* method)
 {
-	return ((  int32_t (*) (List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*, const RuntimeMethod*))List_1_get_Count_mD2ED26ACAF3BAF386FFEA83893BA51DB9FD8BA30_gshared_inline)((List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*)__this, method);
+	return ((  int32_t (*) (List_1_t6B363664E747D5A84578F8282376CB04CDF801F4*, const RuntimeMethod*))List_1_get_Count_m4407E4C389F22B8CEC282C15D56516658746C383_gshared_inline)(__this, method);
 }
 // System.Void System.Collections.Generic.List`1<Cinemachine.ClipperLib/PolyNode>::Clear()
 inline void List_1_Clear_m73287C547CBAFA373521EC072BF640074D60D417_inline (List_1_t6B363664E747D5A84578F8282376CB04CDF801F4* __this, const RuntimeMethod* method)
 {
-	((  void (*) (List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*, const RuntimeMethod*))List_1_Clear_mD615D1BCB2C9DD91DAD86A2F9E5CF1DFFCBF7925_gshared_inline)((List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*)__this, method);
+	((  void (*) (List_1_t6B363664E747D5A84578F8282376CB04CDF801F4*, const RuntimeMethod*))List_1_Clear_m16C1F2C61FED5955F10EB36BC1CB2DF34B128994_gshared_inline)(__this, method);
 }
 // T System.Collections.Generic.List`1<Cinemachine.ClipperLib/PolyNode>::get_Item(System.Int32)
 inline PolyNode_t6632AEAB07BC9B993428D4EE7C9E18EDCE3BAD27* List_1_get_Item_m8A75A1C0A95F2D63355B6A22CD3E1164D0A50482 (List_1_t6B363664E747D5A84578F8282376CB04CDF801F4* __this, int32_t ___index0, const RuntimeMethod* method)
 {
-	PolyNode_t6632AEAB07BC9B993428D4EE7C9E18EDCE3BAD27* il2cppRetVal;
-	((  void (*) (List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*, int32_t, Il2CppFullySharedGenericAny*, const RuntimeMethod*))List_1_get_Item_m6E4BA37C1FB558E4A62AE4324212E45D09C5C937_gshared)((List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*)__this, ___index0, (Il2CppFullySharedGenericAny*)&il2cppRetVal, method);
-	return il2cppRetVal;
+	return ((  PolyNode_t6632AEAB07BC9B993428D4EE7C9E18EDCE3BAD27* (*) (List_1_t6B363664E747D5A84578F8282376CB04CDF801F4*, int32_t, const RuntimeMethod*))List_1_get_Item_m33561245D64798C2AB07584C0EC4F240E4839A38_gshared)(__this, ___index0, method);
 }
 // System.Void System.Collections.Generic.List`1<Cinemachine.ClipperLib/PolyNode>::.ctor()
 inline void List_1__ctor_m02EBBB6097452D083A5D30C2AFFE259B574A84F7 (List_1_t6B363664E747D5A84578F8282376CB04CDF801F4* __this, const RuntimeMethod* method)
 {
-	((  void (*) (List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*, const RuntimeMethod*))List_1__ctor_m0AFBAEA7EC427E32CC9CA267B1930DC5DF67A374_gshared)((List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*)__this, method);
+	((  void (*) (List_1_t6B363664E747D5A84578F8282376CB04CDF801F4*, const RuntimeMethod*))List_1__ctor_m7F078BB342729BDF11327FD89D7872265328F690_gshared)(__this, method);
 }
 // System.Void Cinemachine.ClipperLib/PolyNode::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PolyNode__ctor_m7DF908F626C3C169AEBAF5DDE0AAC631F0153E85 (PolyNode_t6632AEAB07BC9B993428D4EE7C9E18EDCE3BAD27* __this, const RuntimeMethod* method) ;
 // System.Void System.Collections.Generic.List`1<Cinemachine.ClipperLib/PolyNode>::Add(T)
 inline void List_1_Add_m38340DA67D5886C390710E395CB201B804DDF2F9_inline (List_1_t6B363664E747D5A84578F8282376CB04CDF801F4* __this, PolyNode_t6632AEAB07BC9B993428D4EE7C9E18EDCE3BAD27* ___item0, const RuntimeMethod* method)
 {
-	((  void (*) (List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*, /*Unity.IL2CPP.Metadata.__Il2CppFullySharedGenericType*/Il2CppFullySharedGenericAny, const RuntimeMethod*))List_1_Add_mD4F3498FBD3BDD3F03CBCFB38041CBAC9C28CAFC_gshared_inline)((List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*)__this, (Il2CppFullySharedGenericAny)___item0, method);
+	((  void (*) (List_1_t6B363664E747D5A84578F8282376CB04CDF801F4*, PolyNode_t6632AEAB07BC9B993428D4EE7C9E18EDCE3BAD27*, const RuntimeMethod*))List_1_Add_mEBCF994CC3814631017F46A387B1A192ED6C85C7_gshared_inline)(__this, ___item0, method);
 }
 // Cinemachine.ClipperLib/PolyNode Cinemachine.ClipperLib/PolyNode::GetNextSiblingUp()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PolyNode_t6632AEAB07BC9B993428D4EE7C9E18EDCE3BAD27* PolyNode_GetNextSiblingUp_m69D8EDA536BA118464D65E808DCE56325EF2F2ED (PolyNode_t6632AEAB07BC9B993428D4EE7C9E18EDCE3BAD27* __this, const RuntimeMethod* method) ;
@@ -2135,7 +2204,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PolyNode_IsHoleNode_mFE61220C7F4EB0C946A
 // System.Void System.Collections.Generic.List`1<Cinemachine.ClipperLib/IntPoint>::.ctor()
 inline void List_1__ctor_m32AB5B53E1EAEF533CB62F1909BECF6C01854CB9 (List_1_tFFB65DC939B85D88A1FA5032C24DA82DD9685B4C* __this, const RuntimeMethod* method)
 {
-	((  void (*) (List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*, const RuntimeMethod*))List_1__ctor_m0AFBAEA7EC427E32CC9CA267B1930DC5DF67A374_gshared)((List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*)__this, method);
+	((  void (*) (List_1_tFFB65DC939B85D88A1FA5032C24DA82DD9685B4C*, const RuntimeMethod*))List_1__ctor_m32AB5B53E1EAEF533CB62F1909BECF6C01854CB9_gshared)(__this, method);
 }
 // System.Void Cinemachine.ClipperLib/Int128::.ctor(System.Int64)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Int128__ctor_m99DFFF77A5A8617353DAB1869A052B84E772B858 (Int128_t461ED19C0DC62364E3905CBC13C950DB9F22D491* __this, int64_t ____lo0, const RuntimeMethod* method) ;
@@ -2184,41 +2253,39 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ClipperBase_PointOnLineSegment_m0FD505D2
 // System.Void System.Collections.Generic.List`1<System.Collections.Generic.List`1<Cinemachine.ClipperLib/TEdge>>::.ctor()
 inline void List_1__ctor_mC6A8DFFE1F7E580CC8FCAEA233FBF2277A1FB178 (List_1_t79AD4ED63DA2970BB638F8061040C4C26CDE9C8E* __this, const RuntimeMethod* method)
 {
-	((  void (*) (List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*, const RuntimeMethod*))List_1__ctor_m0AFBAEA7EC427E32CC9CA267B1930DC5DF67A374_gshared)((List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*)__this, method);
+	((  void (*) (List_1_t79AD4ED63DA2970BB638F8061040C4C26CDE9C8E*, const RuntimeMethod*))List_1__ctor_m7F078BB342729BDF11327FD89D7872265328F690_gshared)(__this, method);
 }
 // System.Void Cinemachine.ClipperLib/ClipperBase::DisposeLocalMinimaList()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ClipperBase_DisposeLocalMinimaList_mAAE9BA56E0950FF2C34D33C4D5DBA769E028F939 (ClipperBase_tF5E5EE071153091C61DE73A7046E19212CA00B91* __this, const RuntimeMethod* method) ;
 // T System.Collections.Generic.List`1<System.Collections.Generic.List`1<Cinemachine.ClipperLib/TEdge>>::get_Item(System.Int32)
 inline List_1_t7A69F799B1CD8E02D5CE586F3A2352C46D9039D1* List_1_get_Item_mFA7A82A15607EAB7447C99F19714D563466A0368 (List_1_t79AD4ED63DA2970BB638F8061040C4C26CDE9C8E* __this, int32_t ___index0, const RuntimeMethod* method)
 {
-	List_1_t7A69F799B1CD8E02D5CE586F3A2352C46D9039D1* il2cppRetVal;
-	((  void (*) (List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*, int32_t, Il2CppFullySharedGenericAny*, const RuntimeMethod*))List_1_get_Item_m6E4BA37C1FB558E4A62AE4324212E45D09C5C937_gshared)((List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*)__this, ___index0, (Il2CppFullySharedGenericAny*)&il2cppRetVal, method);
-	return il2cppRetVal;
+	return ((  List_1_t7A69F799B1CD8E02D5CE586F3A2352C46D9039D1* (*) (List_1_t79AD4ED63DA2970BB638F8061040C4C26CDE9C8E*, int32_t, const RuntimeMethod*))List_1_get_Item_m33561245D64798C2AB07584C0EC4F240E4839A38_gshared)(__this, ___index0, method);
 }
 // System.Void System.Collections.Generic.List`1<Cinemachine.ClipperLib/TEdge>::set_Item(System.Int32,T)
 inline void List_1_set_Item_mF38E835D3756F0321C5A8AD45CA73048C6AB041E (List_1_t7A69F799B1CD8E02D5CE586F3A2352C46D9039D1* __this, int32_t ___index0, TEdge_tD50F9A4EA68576966D4B0E2E64DF310C2A1F307C* ___value1, const RuntimeMethod* method)
 {
-	((  void (*) (List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*, int32_t, /*Unity.IL2CPP.Metadata.__Il2CppFullySharedGenericType*/Il2CppFullySharedGenericAny, const RuntimeMethod*))List_1_set_Item_m9A958091885CC5363CCFE9F0BC472EAFCB56C813_gshared)((List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*)__this, ___index0, (Il2CppFullySharedGenericAny)___value1, method);
+	((  void (*) (List_1_t7A69F799B1CD8E02D5CE586F3A2352C46D9039D1*, int32_t, TEdge_tD50F9A4EA68576966D4B0E2E64DF310C2A1F307C*, const RuntimeMethod*))List_1_set_Item_m3C58DBC69A321AF2826595584FF3E9F43C07EA56_gshared)(__this, ___index0, ___value1, method);
 }
 // System.Int32 System.Collections.Generic.List`1<Cinemachine.ClipperLib/TEdge>::get_Count()
 inline int32_t List_1_get_Count_mC88874AD9148378AAC5C737FEB124B03200A07A9_inline (List_1_t7A69F799B1CD8E02D5CE586F3A2352C46D9039D1* __this, const RuntimeMethod* method)
 {
-	return ((  int32_t (*) (List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*, const RuntimeMethod*))List_1_get_Count_mD2ED26ACAF3BAF386FFEA83893BA51DB9FD8BA30_gshared_inline)((List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*)__this, method);
+	return ((  int32_t (*) (List_1_t7A69F799B1CD8E02D5CE586F3A2352C46D9039D1*, const RuntimeMethod*))List_1_get_Count_m4407E4C389F22B8CEC282C15D56516658746C383_gshared_inline)(__this, method);
 }
 // System.Void System.Collections.Generic.List`1<Cinemachine.ClipperLib/TEdge>::Clear()
 inline void List_1_Clear_mBF707940F1CA6A6D6CE90304976C6090A563307E_inline (List_1_t7A69F799B1CD8E02D5CE586F3A2352C46D9039D1* __this, const RuntimeMethod* method)
 {
-	((  void (*) (List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*, const RuntimeMethod*))List_1_Clear_mD615D1BCB2C9DD91DAD86A2F9E5CF1DFFCBF7925_gshared_inline)((List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*)__this, method);
+	((  void (*) (List_1_t7A69F799B1CD8E02D5CE586F3A2352C46D9039D1*, const RuntimeMethod*))List_1_Clear_m16C1F2C61FED5955F10EB36BC1CB2DF34B128994_gshared_inline)(__this, method);
 }
 // System.Int32 System.Collections.Generic.List`1<System.Collections.Generic.List`1<Cinemachine.ClipperLib/TEdge>>::get_Count()
 inline int32_t List_1_get_Count_mF15223155BEFF6AADAD14C1A62BD29D01ACD133A_inline (List_1_t79AD4ED63DA2970BB638F8061040C4C26CDE9C8E* __this, const RuntimeMethod* method)
 {
-	return ((  int32_t (*) (List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*, const RuntimeMethod*))List_1_get_Count_mD2ED26ACAF3BAF386FFEA83893BA51DB9FD8BA30_gshared_inline)((List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*)__this, method);
+	return ((  int32_t (*) (List_1_t79AD4ED63DA2970BB638F8061040C4C26CDE9C8E*, const RuntimeMethod*))List_1_get_Count_m4407E4C389F22B8CEC282C15D56516658746C383_gshared_inline)(__this, method);
 }
 // System.Void System.Collections.Generic.List`1<System.Collections.Generic.List`1<Cinemachine.ClipperLib/TEdge>>::Clear()
 inline void List_1_Clear_m9930F9DAD2757ED71272C0961CA28D0D195938B5_inline (List_1_t79AD4ED63DA2970BB638F8061040C4C26CDE9C8E* __this, const RuntimeMethod* method)
 {
-	((  void (*) (List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*, const RuntimeMethod*))List_1_Clear_mD615D1BCB2C9DD91DAD86A2F9E5CF1DFFCBF7925_gshared_inline)((List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*)__this, method);
+	((  void (*) (List_1_t79AD4ED63DA2970BB638F8061040C4C26CDE9C8E*, const RuntimeMethod*))List_1_Clear_m16C1F2C61FED5955F10EB36BC1CB2DF34B128994_gshared_inline)(__this, method);
 }
 // System.Void Cinemachine.ClipperLib/ClipperException::.ctor(System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ClipperException__ctor_mD885137DA5F4345C11209699548F776B93180F1A (ClipperException_t88B1DB246A93C0860AFD818A9BE49B74D84C28D5* __this, String_t* ___description0, const RuntimeMethod* method) ;
@@ -2239,33 +2306,29 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ClipperBase_ReverseHorizontal_m763FCD506
 // System.Int32 System.Collections.Generic.List`1<Cinemachine.ClipperLib/IntPoint>::get_Count()
 inline int32_t List_1_get_Count_m578BA59F69944F4E5EB262CFC17DCD1FB6F4610D_inline (List_1_tFFB65DC939B85D88A1FA5032C24DA82DD9685B4C* __this, const RuntimeMethod* method)
 {
-	return ((  int32_t (*) (List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*, const RuntimeMethod*))List_1_get_Count_mD2ED26ACAF3BAF386FFEA83893BA51DB9FD8BA30_gshared_inline)((List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*)__this, method);
+	return ((  int32_t (*) (List_1_tFFB65DC939B85D88A1FA5032C24DA82DD9685B4C*, const RuntimeMethod*))List_1_get_Count_m578BA59F69944F4E5EB262CFC17DCD1FB6F4610D_gshared_inline)(__this, method);
 }
 // T System.Collections.Generic.List`1<Cinemachine.ClipperLib/IntPoint>::get_Item(System.Int32)
 inline IntPoint_tB90EC7E3658ADAC927B4405BEFE1CBAD98BBC674 List_1_get_Item_m24B912BEB96018A91FE32A68BF3CF2B9602EA36F (List_1_tFFB65DC939B85D88A1FA5032C24DA82DD9685B4C* __this, int32_t ___index0, const RuntimeMethod* method)
 {
-	IntPoint_tB90EC7E3658ADAC927B4405BEFE1CBAD98BBC674 il2cppRetVal;
-	((  void (*) (List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*, int32_t, Il2CppFullySharedGenericAny*, const RuntimeMethod*))List_1_get_Item_m6E4BA37C1FB558E4A62AE4324212E45D09C5C937_gshared)((List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*)__this, ___index0, (Il2CppFullySharedGenericAny*)&il2cppRetVal, method);
-	return il2cppRetVal;
+	return ((  IntPoint_tB90EC7E3658ADAC927B4405BEFE1CBAD98BBC674 (*) (List_1_tFFB65DC939B85D88A1FA5032C24DA82DD9685B4C*, int32_t, const RuntimeMethod*))List_1_get_Item_m24B912BEB96018A91FE32A68BF3CF2B9602EA36F_gshared)(__this, ___index0, method);
 }
 // System.Void System.Collections.Generic.List`1<Cinemachine.ClipperLib/TEdge>::.ctor(System.Int32)
 inline void List_1__ctor_m633360AE274EC65D08C7C400D6E2EC3EF00216C7 (List_1_t7A69F799B1CD8E02D5CE586F3A2352C46D9039D1* __this, int32_t ___capacity0, const RuntimeMethod* method)
 {
-	((  void (*) (List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*, int32_t, const RuntimeMethod*))List_1__ctor_m3069CACB5775E013107F559C825422266A09F9E8_gshared)((List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*)__this, ___capacity0, method);
+	((  void (*) (List_1_t7A69F799B1CD8E02D5CE586F3A2352C46D9039D1*, int32_t, const RuntimeMethod*))List_1__ctor_m76CBBC3E2F0583F5AD30CE592CEA1225C06A0428_gshared)(__this, ___capacity0, method);
 }
 // System.Void Cinemachine.ClipperLib/TEdge::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TEdge__ctor_m8B8B5C7EDFCE49053A6831B431DD8778DA48A793 (TEdge_tD50F9A4EA68576966D4B0E2E64DF310C2A1F307C* __this, const RuntimeMethod* method) ;
 // System.Void System.Collections.Generic.List`1<Cinemachine.ClipperLib/TEdge>::Add(T)
 inline void List_1_Add_m49B75D2B682AE00878EAA2D87FB9EFBCF71D78A4_inline (List_1_t7A69F799B1CD8E02D5CE586F3A2352C46D9039D1* __this, TEdge_tD50F9A4EA68576966D4B0E2E64DF310C2A1F307C* ___item0, const RuntimeMethod* method)
 {
-	((  void (*) (List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*, /*Unity.IL2CPP.Metadata.__Il2CppFullySharedGenericType*/Il2CppFullySharedGenericAny, const RuntimeMethod*))List_1_Add_mD4F3498FBD3BDD3F03CBCFB38041CBAC9C28CAFC_gshared_inline)((List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*)__this, (Il2CppFullySharedGenericAny)___item0, method);
+	((  void (*) (List_1_t7A69F799B1CD8E02D5CE586F3A2352C46D9039D1*, TEdge_tD50F9A4EA68576966D4B0E2E64DF310C2A1F307C*, const RuntimeMethod*))List_1_Add_mEBCF994CC3814631017F46A387B1A192ED6C85C7_gshared_inline)(__this, ___item0, method);
 }
 // T System.Collections.Generic.List`1<Cinemachine.ClipperLib/TEdge>::get_Item(System.Int32)
 inline TEdge_tD50F9A4EA68576966D4B0E2E64DF310C2A1F307C* List_1_get_Item_mCE45149B7D8049EBC4411FD81B5F37FA1DD86A4F (List_1_t7A69F799B1CD8E02D5CE586F3A2352C46D9039D1* __this, int32_t ___index0, const RuntimeMethod* method)
 {
-	TEdge_tD50F9A4EA68576966D4B0E2E64DF310C2A1F307C* il2cppRetVal;
-	((  void (*) (List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*, int32_t, Il2CppFullySharedGenericAny*, const RuntimeMethod*))List_1_get_Item_m6E4BA37C1FB558E4A62AE4324212E45D09C5C937_gshared)((List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*)__this, ___index0, (Il2CppFullySharedGenericAny*)&il2cppRetVal, method);
-	return il2cppRetVal;
+	return ((  TEdge_tD50F9A4EA68576966D4B0E2E64DF310C2A1F307C* (*) (List_1_t7A69F799B1CD8E02D5CE586F3A2352C46D9039D1*, int32_t, const RuntimeMethod*))List_1_get_Item_m33561245D64798C2AB07584C0EC4F240E4839A38_gshared)(__this, ___index0, method);
 }
 // System.Void Cinemachine.ClipperLib/ClipperBase::InitEdge(Cinemachine.ClipperLib/TEdge,Cinemachine.ClipperLib/TEdge,Cinemachine.ClipperLib/TEdge,Cinemachine.ClipperLib/IntPoint)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ClipperBase_InitEdge_m982226D0C1C630392C77A166BEAC4761A8F93EC5 (ClipperBase_tF5E5EE071153091C61DE73A7046E19212CA00B91* __this, TEdge_tD50F9A4EA68576966D4B0E2E64DF310C2A1F307C* ___e0, TEdge_tD50F9A4EA68576966D4B0E2E64DF310C2A1F307C* ___eNext1, TEdge_tD50F9A4EA68576966D4B0E2E64DF310C2A1F307C* ___ePrev2, IntPoint_tB90EC7E3658ADAC927B4405BEFE1CBAD98BBC674 ___pt3, const RuntimeMethod* method) ;
@@ -2282,23 +2345,21 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ClipperBase_InitEdge2_mE657B680AC1506D14
 // System.Void System.Collections.Generic.List`1<System.Collections.Generic.List`1<Cinemachine.ClipperLib/TEdge>>::Add(T)
 inline void List_1_Add_m4BED23BFE4F438B7A159D38CDD018D380E8ED80A_inline (List_1_t79AD4ED63DA2970BB638F8061040C4C26CDE9C8E* __this, List_1_t7A69F799B1CD8E02D5CE586F3A2352C46D9039D1* ___item0, const RuntimeMethod* method)
 {
-	((  void (*) (List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*, /*Unity.IL2CPP.Metadata.__Il2CppFullySharedGenericType*/Il2CppFullySharedGenericAny, const RuntimeMethod*))List_1_Add_mD4F3498FBD3BDD3F03CBCFB38041CBAC9C28CAFC_gshared_inline)((List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*)__this, (Il2CppFullySharedGenericAny)___item0, method);
+	((  void (*) (List_1_t79AD4ED63DA2970BB638F8061040C4C26CDE9C8E*, List_1_t7A69F799B1CD8E02D5CE586F3A2352C46D9039D1*, const RuntimeMethod*))List_1_Add_mEBCF994CC3814631017F46A387B1A192ED6C85C7_gshared_inline)(__this, ___item0, method);
 }
 // Cinemachine.ClipperLib/TEdge Cinemachine.ClipperLib/ClipperBase::FindNextLocMin(Cinemachine.ClipperLib/TEdge)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR TEdge_tD50F9A4EA68576966D4B0E2E64DF310C2A1F307C* ClipperBase_FindNextLocMin_m45C5FE3F29B6B82782CDCF8AFF7A24C5EE3C397F (ClipperBase_tF5E5EE071153091C61DE73A7046E19212CA00B91* __this, TEdge_tD50F9A4EA68576966D4B0E2E64DF310C2A1F307C* ___E0, const RuntimeMethod* method) ;
 // T System.Collections.Generic.List`1<System.Collections.Generic.List`1<Cinemachine.ClipperLib/IntPoint>>::get_Item(System.Int32)
 inline List_1_tFFB65DC939B85D88A1FA5032C24DA82DD9685B4C* List_1_get_Item_m58651A3DF17EC286EB4A1CD339ACAD222C5C8424 (List_1_tD3D80A48908E0B8646110C913780E72E2157A541* __this, int32_t ___index0, const RuntimeMethod* method)
 {
-	List_1_tFFB65DC939B85D88A1FA5032C24DA82DD9685B4C* il2cppRetVal;
-	((  void (*) (List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*, int32_t, Il2CppFullySharedGenericAny*, const RuntimeMethod*))List_1_get_Item_m6E4BA37C1FB558E4A62AE4324212E45D09C5C937_gshared)((List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*)__this, ___index0, (Il2CppFullySharedGenericAny*)&il2cppRetVal, method);
-	return il2cppRetVal;
+	return ((  List_1_tFFB65DC939B85D88A1FA5032C24DA82DD9685B4C* (*) (List_1_tD3D80A48908E0B8646110C913780E72E2157A541*, int32_t, const RuntimeMethod*))List_1_get_Item_m33561245D64798C2AB07584C0EC4F240E4839A38_gshared)(__this, ___index0, method);
 }
 // System.Boolean Cinemachine.ClipperLib/ClipperBase::AddPath(System.Collections.Generic.List`1<Cinemachine.ClipperLib/IntPoint>,Cinemachine.ClipperLib/PolyType,System.Boolean)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ClipperBase_AddPath_m34810D1B9F21314A52EB4A1B77F454EE19CAA62F (ClipperBase_tF5E5EE071153091C61DE73A7046E19212CA00B91* __this, List_1_tFFB65DC939B85D88A1FA5032C24DA82DD9685B4C* ___pg0, int32_t ___polyType1, bool ___Closed2, const RuntimeMethod* method) ;
 // System.Int32 System.Collections.Generic.List`1<System.Collections.Generic.List`1<Cinemachine.ClipperLib/IntPoint>>::get_Count()
 inline int32_t List_1_get_Count_m3EA042A7A6709E4B248A6AEF39800F2BCB5D418B_inline (List_1_tD3D80A48908E0B8646110C913780E72E2157A541* __this, const RuntimeMethod* method)
 {
-	return ((  int32_t (*) (List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*, const RuntimeMethod*))List_1_get_Count_mD2ED26ACAF3BAF386FFEA83893BA51DB9FD8BA30_gshared_inline)((List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*)__this, method);
+	return ((  int32_t (*) (List_1_tD3D80A48908E0B8646110C913780E72E2157A541*, const RuntimeMethod*))List_1_get_Count_m4407E4C389F22B8CEC282C15D56516658746C383_gshared_inline)(__this, method);
 }
 // System.Void Cinemachine.ClipperLib/ClipperBase::Swap(System.Int64&,System.Int64&)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ClipperBase_Swap_mF999B5BD7A715214B574ED4F7A74092F67F9A836 (ClipperBase_tF5E5EE071153091C61DE73A7046E19212CA00B91* __this, int64_t* ___val10, int64_t* ___val21, const RuntimeMethod* method) ;
@@ -2311,24 +2372,22 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OutRec__ctor_mE1E0B900C419695A0EC929A77C
 // System.Void System.Collections.Generic.List`1<Cinemachine.ClipperLib/OutRec>::Add(T)
 inline void List_1_Add_m43E68393DA41E9A5E74AE3B8F6C75C1569063926_inline (List_1_t228D82D8E5C6A21F8A1BD91379B7784A558E2F89* __this, OutRec_t6D2B067484E113CECC5ABBC74D55E034B74C9BC8* ___item0, const RuntimeMethod* method)
 {
-	((  void (*) (List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*, /*Unity.IL2CPP.Metadata.__Il2CppFullySharedGenericType*/Il2CppFullySharedGenericAny, const RuntimeMethod*))List_1_Add_mD4F3498FBD3BDD3F03CBCFB38041CBAC9C28CAFC_gshared_inline)((List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*)__this, (Il2CppFullySharedGenericAny)___item0, method);
+	((  void (*) (List_1_t228D82D8E5C6A21F8A1BD91379B7784A558E2F89*, OutRec_t6D2B067484E113CECC5ABBC74D55E034B74C9BC8*, const RuntimeMethod*))List_1_Add_mEBCF994CC3814631017F46A387B1A192ED6C85C7_gshared_inline)(__this, ___item0, method);
 }
 // System.Int32 System.Collections.Generic.List`1<Cinemachine.ClipperLib/OutRec>::get_Count()
 inline int32_t List_1_get_Count_m7B5B7B6D1ECECC11C1BCEDA7885437773EEEFF89_inline (List_1_t228D82D8E5C6A21F8A1BD91379B7784A558E2F89* __this, const RuntimeMethod* method)
 {
-	return ((  int32_t (*) (List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*, const RuntimeMethod*))List_1_get_Count_mD2ED26ACAF3BAF386FFEA83893BA51DB9FD8BA30_gshared_inline)((List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*)__this, method);
+	return ((  int32_t (*) (List_1_t228D82D8E5C6A21F8A1BD91379B7784A558E2F89*, const RuntimeMethod*))List_1_get_Count_m4407E4C389F22B8CEC282C15D56516658746C383_gshared_inline)(__this, method);
 }
 // T System.Collections.Generic.List`1<Cinemachine.ClipperLib/OutRec>::get_Item(System.Int32)
 inline OutRec_t6D2B067484E113CECC5ABBC74D55E034B74C9BC8* List_1_get_Item_m653B5F0ADEFC0CF452AD9D799C1D66729CD94FDF (List_1_t228D82D8E5C6A21F8A1BD91379B7784A558E2F89* __this, int32_t ___index0, const RuntimeMethod* method)
 {
-	OutRec_t6D2B067484E113CECC5ABBC74D55E034B74C9BC8* il2cppRetVal;
-	((  void (*) (List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*, int32_t, Il2CppFullySharedGenericAny*, const RuntimeMethod*))List_1_get_Item_m6E4BA37C1FB558E4A62AE4324212E45D09C5C937_gshared)((List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*)__this, ___index0, (Il2CppFullySharedGenericAny*)&il2cppRetVal, method);
-	return il2cppRetVal;
+	return ((  OutRec_t6D2B067484E113CECC5ABBC74D55E034B74C9BC8* (*) (List_1_t228D82D8E5C6A21F8A1BD91379B7784A558E2F89*, int32_t, const RuntimeMethod*))List_1_get_Item_m33561245D64798C2AB07584C0EC4F240E4839A38_gshared)(__this, ___index0, method);
 }
 // System.Void System.Collections.Generic.List`1<Cinemachine.ClipperLib/OutRec>::set_Item(System.Int32,T)
 inline void List_1_set_Item_m19B8672E6D300924B0340B512E91860E746631F9 (List_1_t228D82D8E5C6A21F8A1BD91379B7784A558E2F89* __this, int32_t ___index0, OutRec_t6D2B067484E113CECC5ABBC74D55E034B74C9BC8* ___value1, const RuntimeMethod* method)
 {
-	((  void (*) (List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*, int32_t, /*Unity.IL2CPP.Metadata.__Il2CppFullySharedGenericType*/Il2CppFullySharedGenericAny, const RuntimeMethod*))List_1_set_Item_m9A958091885CC5363CCFE9F0BC472EAFCB56C813_gshared)((List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*)__this, ___index0, (Il2CppFullySharedGenericAny)___value1, method);
+	((  void (*) (List_1_t228D82D8E5C6A21F8A1BD91379B7784A558E2F89*, int32_t, OutRec_t6D2B067484E113CECC5ABBC74D55E034B74C9BC8*, const RuntimeMethod*))List_1_set_Item_m3C58DBC69A321AF2826595584FF3E9F43C07EA56_gshared)(__this, ___index0, ___value1, method);
 }
 // System.Boolean Cinemachine.ClipperLib/ClipperBase::IsHorizontal(Cinemachine.ClipperLib/TEdge)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ClipperBase_IsHorizontal_mC5D18FBAFCA54F1668FFEB484E6CA7B2D4ED79F7 (TEdge_tD50F9A4EA68576966D4B0E2E64DF310C2A1F307C* ___e0, const RuntimeMethod* method) ;
@@ -2337,19 +2396,19 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ClipperBase__ctor_mDD73F9BB8C4F62B9182AD
 // System.Void System.Collections.Generic.List`1<Cinemachine.ClipperLib/IntersectNode>::.ctor()
 inline void List_1__ctor_mF9A76ACC60232E241EA7BCD69EB106F0D6C61050 (List_1_t762FB7D85EDD20C0C53C1361807B0DE03606E1E9* __this, const RuntimeMethod* method)
 {
-	((  void (*) (List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*, const RuntimeMethod*))List_1__ctor_m0AFBAEA7EC427E32CC9CA267B1930DC5DF67A374_gshared)((List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*)__this, method);
+	((  void (*) (List_1_t762FB7D85EDD20C0C53C1361807B0DE03606E1E9*, const RuntimeMethod*))List_1__ctor_m7F078BB342729BDF11327FD89D7872265328F690_gshared)(__this, method);
 }
 // System.Void Cinemachine.ClipperLib/MyIntersectNodeSort::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MyIntersectNodeSort__ctor_m0319149B8A1830A064E146C75B97ECF76507BCA6 (MyIntersectNodeSort_tA4996D120A07E5639E2C8AD32D3708C1EBA1111E* __this, const RuntimeMethod* method) ;
 // System.Void System.Collections.Generic.List`1<Cinemachine.ClipperLib/OutRec>::.ctor()
 inline void List_1__ctor_m754D8FF7B110562A9B45774BE3B6C66EC76C0452 (List_1_t228D82D8E5C6A21F8A1BD91379B7784A558E2F89* __this, const RuntimeMethod* method)
 {
-	((  void (*) (List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*, const RuntimeMethod*))List_1__ctor_m0AFBAEA7EC427E32CC9CA267B1930DC5DF67A374_gshared)((List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*)__this, method);
+	((  void (*) (List_1_t228D82D8E5C6A21F8A1BD91379B7784A558E2F89*, const RuntimeMethod*))List_1__ctor_m7F078BB342729BDF11327FD89D7872265328F690_gshared)(__this, method);
 }
 // System.Void System.Collections.Generic.List`1<Cinemachine.ClipperLib/Join>::.ctor()
 inline void List_1__ctor_mE3C9BFD81465E09626029AACA7A4E029DC0FDB53 (List_1_t1FD0176A6AE3A0879983080D9977949695807419* __this, const RuntimeMethod* method)
 {
-	((  void (*) (List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*, const RuntimeMethod*))List_1__ctor_m0AFBAEA7EC427E32CC9CA267B1930DC5DF67A374_gshared)((List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*)__this, method);
+	((  void (*) (List_1_t1FD0176A6AE3A0879983080D9977949695807419*, const RuntimeMethod*))List_1__ctor_m7F078BB342729BDF11327FD89D7872265328F690_gshared)(__this, method);
 }
 // System.Void Cinemachine.ClipperLib/Clipper::set_ReverseSolution(System.Boolean)
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Clipper_set_ReverseSolution_m4C3D2FEE37DDCCB590395F6A7199C8510813834A_inline (Clipper_t2CB022C7BAC01EB2FDE672FC25B30C7F7DE2303A* __this, bool ___value0, const RuntimeMethod* method) ;
@@ -2366,7 +2425,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Clipper_Execute_mDBF9988159022C1F340702F
 // System.Void System.Collections.Generic.List`1<System.Collections.Generic.List`1<Cinemachine.ClipperLib/IntPoint>>::Clear()
 inline void List_1_Clear_mCEFDEE1CDCD179EC42CACBA45A68043B2F6EF9B0_inline (List_1_tD3D80A48908E0B8646110C913780E72E2157A541* __this, const RuntimeMethod* method)
 {
-	((  void (*) (List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*, const RuntimeMethod*))List_1_Clear_mD615D1BCB2C9DD91DAD86A2F9E5CF1DFFCBF7925_gshared_inline)((List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*)__this, method);
+	((  void (*) (List_1_tD3D80A48908E0B8646110C913780E72E2157A541*, const RuntimeMethod*))List_1_Clear_m16C1F2C61FED5955F10EB36BC1CB2DF34B128994_gshared_inline)(__this, method);
 }
 // System.Void Cinemachine.ClipperLib/Clipper::DisposeAllPolyPts()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper_DisposeAllPolyPts_mF4263E2B3EDF1A70EA2A11C865C64C13FA097D9D (Clipper_t2CB022C7BAC01EB2FDE672FC25B30C7F7DE2303A* __this, const RuntimeMethod* method) ;
@@ -2379,7 +2438,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper_BuildResult2_m115358F60E247678C5
 // System.Void System.Collections.Generic.List`1<Cinemachine.ClipperLib/Join>::Clear()
 inline void List_1_Clear_m83EF7CF12739DF378EB7B63C633DE3D573A9CE10_inline (List_1_t1FD0176A6AE3A0879983080D9977949695807419* __this, const RuntimeMethod* method)
 {
-	((  void (*) (List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*, const RuntimeMethod*))List_1_Clear_mD615D1BCB2C9DD91DAD86A2F9E5CF1DFFCBF7925_gshared_inline)((List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*)__this, method);
+	((  void (*) (List_1_t1FD0176A6AE3A0879983080D9977949695807419*, const RuntimeMethod*))List_1_Clear_m16C1F2C61FED5955F10EB36BC1CB2DF34B128994_gshared_inline)(__this, method);
 }
 // System.Boolean Cinemachine.ClipperLib/ClipperBase::PopScanbeam(System.Int64&)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ClipperBase_PopScanbeam_mD7D3E1613AE0AD4A4E1C317C5A3B60D9142F40FF (ClipperBase_tF5E5EE071153091C61DE73A7046E19212CA00B91* __this, int64_t* ___Y0, const RuntimeMethod* method) ;
@@ -2396,21 +2455,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ClipperBase_LocalMinimaPending_m5D90C289
 // System.Collections.Generic.List`1/Enumerator<T> System.Collections.Generic.List`1<Cinemachine.ClipperLib/OutRec>::GetEnumerator()
 inline Enumerator_tC49E999203D4120E877CA9F8F56707B78DD31B74 List_1_GetEnumerator_mE7FB279082335C65D94909BE2454031B39A97FC8 (List_1_t228D82D8E5C6A21F8A1BD91379B7784A558E2F89* __this, const RuntimeMethod* method)
 {
-	Enumerator_tC49E999203D4120E877CA9F8F56707B78DD31B74 il2cppRetVal;
-	((  void (*) (List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*, Enumerator_tF5AC6CD19D283FBD724440520CEE68FE2602F7AF*, const RuntimeMethod*))List_1_GetEnumerator_m8B2A92ACD4FBA5FBDC3F6F4F5C23A0DDF491DA61_gshared)((List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*)__this, (Enumerator_tF5AC6CD19D283FBD724440520CEE68FE2602F7AF*)&il2cppRetVal, method);
-	return il2cppRetVal;
+	return ((  Enumerator_tC49E999203D4120E877CA9F8F56707B78DD31B74 (*) (List_1_t228D82D8E5C6A21F8A1BD91379B7784A558E2F89*, const RuntimeMethod*))List_1_GetEnumerator_mD8294A7FA2BEB1929487127D476F8EC1CDC23BFC_gshared)(__this, method);
 }
 // System.Void System.Collections.Generic.List`1/Enumerator<Cinemachine.ClipperLib/OutRec>::Dispose()
 inline void Enumerator_Dispose_m5DA384257E0C16863BD28F5D855942F59BF1C6E6 (Enumerator_tC49E999203D4120E877CA9F8F56707B78DD31B74* __this, const RuntimeMethod* method)
 {
-	((  void (*) (Enumerator_tF5AC6CD19D283FBD724440520CEE68FE2602F7AF*, const RuntimeMethod*))Enumerator_Dispose_mFE1EBE6F6425283FEAEAE7C79D02CDE4F9D367E8_gshared)((Enumerator_tF5AC6CD19D283FBD724440520CEE68FE2602F7AF*)__this, method);
+	((  void (*) (Enumerator_tC49E999203D4120E877CA9F8F56707B78DD31B74*, const RuntimeMethod*))Enumerator_Dispose_mD9DC3E3C3697830A4823047AB29A77DBBB5ED419_gshared)(__this, method);
 }
 // T System.Collections.Generic.List`1/Enumerator<Cinemachine.ClipperLib/OutRec>::get_Current()
 inline OutRec_t6D2B067484E113CECC5ABBC74D55E034B74C9BC8* Enumerator_get_Current_m269A5A7222CCAB547017E0883052F17764EABC90_inline (Enumerator_tC49E999203D4120E877CA9F8F56707B78DD31B74* __this, const RuntimeMethod* method)
 {
-	OutRec_t6D2B067484E113CECC5ABBC74D55E034B74C9BC8* il2cppRetVal;
-	((  void (*) (Enumerator_tF5AC6CD19D283FBD724440520CEE68FE2602F7AF*, Il2CppFullySharedGenericAny*, const RuntimeMethod*))Enumerator_get_Current_m8B42D4B2DE853B9D11B997120CD0228D4780E394_gshared_inline)((Enumerator_tF5AC6CD19D283FBD724440520CEE68FE2602F7AF*)__this, (Il2CppFullySharedGenericAny*)&il2cppRetVal, method);
-	return il2cppRetVal;
+	return ((  OutRec_t6D2B067484E113CECC5ABBC74D55E034B74C9BC8* (*) (Enumerator_tC49E999203D4120E877CA9F8F56707B78DD31B74*, const RuntimeMethod*))Enumerator_get_Current_m6330F15D18EE4F547C05DF9BF83C5EB710376027_gshared_inline)(__this, method);
 }
 // System.Boolean Cinemachine.ClipperLib/Clipper::get_ReverseSolution()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool Clipper_get_ReverseSolution_m58207CBA9E1BF47F359F847CE77963A18D3FE70D_inline (Clipper_t2CB022C7BAC01EB2FDE672FC25B30C7F7DE2303A* __this, const RuntimeMethod* method) ;
@@ -2421,7 +2476,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper_ReversePolyPtLinks_m10B9631CBBD7
 // System.Boolean System.Collections.Generic.List`1/Enumerator<Cinemachine.ClipperLib/OutRec>::MoveNext()
 inline bool Enumerator_MoveNext_m7988B5FFCAABCA6E94F4AC1C6DAA85995A058C1B (Enumerator_tC49E999203D4120E877CA9F8F56707B78DD31B74* __this, const RuntimeMethod* method)
 {
-	return ((  bool (*) (Enumerator_tF5AC6CD19D283FBD724440520CEE68FE2602F7AF*, const RuntimeMethod*))Enumerator_MoveNext_m8D8E5E878AF0A88A535AB1AB5BA4F23E151A678A_gshared)((Enumerator_tF5AC6CD19D283FBD724440520CEE68FE2602F7AF*)__this, method);
+	return ((  bool (*) (Enumerator_tC49E999203D4120E877CA9F8F56707B78DD31B74*, const RuntimeMethod*))Enumerator_MoveNext_mE921CC8F29FBBDE7CC3209A0ED0D921D58D00BCB_gshared)(__this, method);
 }
 // System.Void Cinemachine.ClipperLib/Clipper::JoinCommonEdges()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper_JoinCommonEdges_m1144D7D13B127B352BEE7B56E194E6FA5223144E (Clipper_t2CB022C7BAC01EB2FDE672FC25B30C7F7DE2303A* __this, const RuntimeMethod* method) ;
@@ -2438,14 +2493,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ClipperBase_DisposeOutRec_m6A228CBBF968B
 // System.Void System.Collections.Generic.List`1<Cinemachine.ClipperLib/OutRec>::Clear()
 inline void List_1_Clear_mF1C2EC93EB8BFF38F9150AE9592CC50FA83932C4_inline (List_1_t228D82D8E5C6A21F8A1BD91379B7784A558E2F89* __this, const RuntimeMethod* method)
 {
-	((  void (*) (List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*, const RuntimeMethod*))List_1_Clear_mD615D1BCB2C9DD91DAD86A2F9E5CF1DFFCBF7925_gshared_inline)((List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*)__this, method);
+	((  void (*) (List_1_t228D82D8E5C6A21F8A1BD91379B7784A558E2F89*, const RuntimeMethod*))List_1_Clear_m16C1F2C61FED5955F10EB36BC1CB2DF34B128994_gshared_inline)(__this, method);
 }
 // System.Void Cinemachine.ClipperLib/Join::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Join__ctor_m0275B6A7878993163832BBF4D62AEDAB9058D665 (Join_tC247F825C3474E3553B7007354172DE328084DBF* __this, const RuntimeMethod* method) ;
 // System.Void System.Collections.Generic.List`1<Cinemachine.ClipperLib/Join>::Add(T)
 inline void List_1_Add_m26AE6A5083070617FAA9340EDE1BCB512EC0AC22_inline (List_1_t1FD0176A6AE3A0879983080D9977949695807419* __this, Join_tC247F825C3474E3553B7007354172DE328084DBF* ___item0, const RuntimeMethod* method)
 {
-	((  void (*) (List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*, /*Unity.IL2CPP.Metadata.__Il2CppFullySharedGenericType*/Il2CppFullySharedGenericAny, const RuntimeMethod*))List_1_Add_mD4F3498FBD3BDD3F03CBCFB38041CBAC9C28CAFC_gshared_inline)((List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*)__this, (Il2CppFullySharedGenericAny)___item0, method);
+	((  void (*) (List_1_t1FD0176A6AE3A0879983080D9977949695807419*, Join_tC247F825C3474E3553B7007354172DE328084DBF*, const RuntimeMethod*))List_1_Add_mEBCF994CC3814631017F46A387B1A192ED6C85C7_gshared_inline)(__this, ___item0, method);
 }
 // System.Void Cinemachine.ClipperLib/Clipper::InsertEdgeIntoAEL(Cinemachine.ClipperLib/TEdge,Cinemachine.ClipperLib/TEdge)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper_InsertEdgeIntoAEL_mC2B55AE5665316899504CBCA4F7F2D3390A5C019 (Clipper_t2CB022C7BAC01EB2FDE672FC25B30C7F7DE2303A* __this, TEdge_tD50F9A4EA68576966D4B0E2E64DF310C2A1F307C* ___edge0, TEdge_tD50F9A4EA68576966D4B0E2E64DF310C2A1F307C* ___startEdge1, const RuntimeMethod* method) ;
@@ -2462,14 +2517,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper_AddEdgeToSEL_m5D29FF86F0F6B1FA0C
 // System.Int32 System.Collections.Generic.List`1<Cinemachine.ClipperLib/Join>::get_Count()
 inline int32_t List_1_get_Count_m42D1CB949CD391B21188B27EE075FAD71F86EFC4_inline (List_1_t1FD0176A6AE3A0879983080D9977949695807419* __this, const RuntimeMethod* method)
 {
-	return ((  int32_t (*) (List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*, const RuntimeMethod*))List_1_get_Count_mD2ED26ACAF3BAF386FFEA83893BA51DB9FD8BA30_gshared_inline)((List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*)__this, method);
+	return ((  int32_t (*) (List_1_t1FD0176A6AE3A0879983080D9977949695807419*, const RuntimeMethod*))List_1_get_Count_m4407E4C389F22B8CEC282C15D56516658746C383_gshared_inline)(__this, method);
 }
 // T System.Collections.Generic.List`1<Cinemachine.ClipperLib/Join>::get_Item(System.Int32)
 inline Join_tC247F825C3474E3553B7007354172DE328084DBF* List_1_get_Item_m8C0DC9D63B1C69B245183D78F6F96549384337DB (List_1_t1FD0176A6AE3A0879983080D9977949695807419* __this, int32_t ___index0, const RuntimeMethod* method)
 {
-	Join_tC247F825C3474E3553B7007354172DE328084DBF* il2cppRetVal;
-	((  void (*) (List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*, int32_t, Il2CppFullySharedGenericAny*, const RuntimeMethod*))List_1_get_Item_m6E4BA37C1FB558E4A62AE4324212E45D09C5C937_gshared)((List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*)__this, ___index0, (Il2CppFullySharedGenericAny*)&il2cppRetVal, method);
-	return il2cppRetVal;
+	return ((  Join_tC247F825C3474E3553B7007354172DE328084DBF* (*) (List_1_t1FD0176A6AE3A0879983080D9977949695807419*, int32_t, const RuntimeMethod*))List_1_get_Item_m33561245D64798C2AB07584C0EC4F240E4839A38_gshared)(__this, ___index0, method);
 }
 // System.Boolean Cinemachine.ClipperLib/Clipper::HorzSegmentsOverlap(System.Int64,System.Int64,System.Int64,System.Int64)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Clipper_HorzSegmentsOverlap_m5FA9498ACDD1B422C8024DA1A7BBB24BAC552790 (Clipper_t2CB022C7BAC01EB2FDE672FC25B30C7F7DE2303A* __this, int64_t ___seg1a0, int64_t ___seg1b1, int64_t ___seg2a2, int64_t ___seg2b3, const RuntimeMethod* method) ;
@@ -2546,7 +2599,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper_BuildIntersectList_m6B5DA2A81AF6
 // System.Int32 System.Collections.Generic.List`1<Cinemachine.ClipperLib/IntersectNode>::get_Count()
 inline int32_t List_1_get_Count_m439BD0C7FF409E92E68A9B24A4A8ABA6A0CFA578_inline (List_1_t762FB7D85EDD20C0C53C1361807B0DE03606E1E9* __this, const RuntimeMethod* method)
 {
-	return ((  int32_t (*) (List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*, const RuntimeMethod*))List_1_get_Count_mD2ED26ACAF3BAF386FFEA83893BA51DB9FD8BA30_gshared_inline)((List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*)__this, method);
+	return ((  int32_t (*) (List_1_t762FB7D85EDD20C0C53C1361807B0DE03606E1E9*, const RuntimeMethod*))List_1_get_Count_m4407E4C389F22B8CEC282C15D56516658746C383_gshared_inline)(__this, method);
 }
 // System.Boolean Cinemachine.ClipperLib/Clipper::FixupIntersectionOrder()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Clipper_FixupIntersectionOrder_m11A6732B2BAE536BDCEFD38A652944B153C2BE9F (Clipper_t2CB022C7BAC01EB2FDE672FC25B30C7F7DE2303A* __this, const RuntimeMethod* method) ;
@@ -2555,7 +2608,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper_ProcessIntersectList_mB3ADFF851F
 // System.Void System.Collections.Generic.List`1<Cinemachine.ClipperLib/IntersectNode>::Clear()
 inline void List_1_Clear_m3952313659E515B4F6B923C7A3AD5265CAA5D42E_inline (List_1_t762FB7D85EDD20C0C53C1361807B0DE03606E1E9* __this, const RuntimeMethod* method)
 {
-	((  void (*) (List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*, const RuntimeMethod*))List_1_Clear_mD615D1BCB2C9DD91DAD86A2F9E5CF1DFFCBF7925_gshared_inline)((List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*)__this, method);
+	((  void (*) (List_1_t762FB7D85EDD20C0C53C1361807B0DE03606E1E9*, const RuntimeMethod*))List_1_Clear_m16C1F2C61FED5955F10EB36BC1CB2DF34B128994_gshared_inline)(__this, method);
 }
 // System.Void Cinemachine.ClipperLib/Clipper::IntersectPoint(Cinemachine.ClipperLib/TEdge,Cinemachine.ClipperLib/TEdge,Cinemachine.ClipperLib/IntPoint&)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper_IntersectPoint_mE17B6245017EAD8BEA10EDBAF03A182AEABCCFEE (Clipper_t2CB022C7BAC01EB2FDE672FC25B30C7F7DE2303A* __this, TEdge_tD50F9A4EA68576966D4B0E2E64DF310C2A1F307C* ___edge10, TEdge_tD50F9A4EA68576966D4B0E2E64DF310C2A1F307C* ___edge21, IntPoint_tB90EC7E3658ADAC927B4405BEFE1CBAD98BBC674* ___ip2, const RuntimeMethod* method) ;
@@ -2564,30 +2617,28 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void IntersectNode__ctor_m531399DCA2D444AA95E
 // System.Void System.Collections.Generic.List`1<Cinemachine.ClipperLib/IntersectNode>::Add(T)
 inline void List_1_Add_mC7A2889E5E5692B00E4F6AB0D4780719CFCD97AB_inline (List_1_t762FB7D85EDD20C0C53C1361807B0DE03606E1E9* __this, IntersectNode_tB1CF83EEBA90B0A14D3D26B281FB389770AF60CC* ___item0, const RuntimeMethod* method)
 {
-	((  void (*) (List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*, /*Unity.IL2CPP.Metadata.__Il2CppFullySharedGenericType*/Il2CppFullySharedGenericAny, const RuntimeMethod*))List_1_Add_mD4F3498FBD3BDD3F03CBCFB38041CBAC9C28CAFC_gshared_inline)((List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*)__this, (Il2CppFullySharedGenericAny)___item0, method);
+	((  void (*) (List_1_t762FB7D85EDD20C0C53C1361807B0DE03606E1E9*, IntersectNode_tB1CF83EEBA90B0A14D3D26B281FB389770AF60CC*, const RuntimeMethod*))List_1_Add_mEBCF994CC3814631017F46A387B1A192ED6C85C7_gshared_inline)(__this, ___item0, method);
 }
 // System.Void Cinemachine.ClipperLib/Clipper::SwapPositionsInSEL(Cinemachine.ClipperLib/TEdge,Cinemachine.ClipperLib/TEdge)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper_SwapPositionsInSEL_mD3379C551074FD2F32E777F91952245DEA9E9594 (Clipper_t2CB022C7BAC01EB2FDE672FC25B30C7F7DE2303A* __this, TEdge_tD50F9A4EA68576966D4B0E2E64DF310C2A1F307C* ___edge10, TEdge_tD50F9A4EA68576966D4B0E2E64DF310C2A1F307C* ___edge21, const RuntimeMethod* method) ;
 // System.Void System.Collections.Generic.List`1<Cinemachine.ClipperLib/IntersectNode>::Sort(System.Collections.Generic.IComparer`1<T>)
 inline void List_1_Sort_mA8FB5B43D81F6EE4E5CAFC099720A288A07FC2EF (List_1_t762FB7D85EDD20C0C53C1361807B0DE03606E1E9* __this, RuntimeObject* ___comparer0, const RuntimeMethod* method)
 {
-	((  void (*) (List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*, RuntimeObject*, const RuntimeMethod*))List_1_Sort_mCBEFEE4479438557E591F7AEF3BFDE2297DA269D_gshared)((List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*)__this, (RuntimeObject*)___comparer0, method);
+	((  void (*) (List_1_t762FB7D85EDD20C0C53C1361807B0DE03606E1E9*, RuntimeObject*, const RuntimeMethod*))List_1_Sort_m4204C143D97E871DF2553329CFB0FBE3CD1A01F2_gshared)(__this, ___comparer0, method);
 }
 // System.Void Cinemachine.ClipperLib/Clipper::CopyAELToSEL()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper_CopyAELToSEL_mBE2FFC8FFF11AA874A8F542E437DB2FA824B32F7 (Clipper_t2CB022C7BAC01EB2FDE672FC25B30C7F7DE2303A* __this, const RuntimeMethod* method) ;
 // T System.Collections.Generic.List`1<Cinemachine.ClipperLib/IntersectNode>::get_Item(System.Int32)
 inline IntersectNode_tB1CF83EEBA90B0A14D3D26B281FB389770AF60CC* List_1_get_Item_mD5CC773F67CDFB26C7426232F743FC4DA82F43E7 (List_1_t762FB7D85EDD20C0C53C1361807B0DE03606E1E9* __this, int32_t ___index0, const RuntimeMethod* method)
 {
-	IntersectNode_tB1CF83EEBA90B0A14D3D26B281FB389770AF60CC* il2cppRetVal;
-	((  void (*) (List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*, int32_t, Il2CppFullySharedGenericAny*, const RuntimeMethod*))List_1_get_Item_m6E4BA37C1FB558E4A62AE4324212E45D09C5C937_gshared)((List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*)__this, ___index0, (Il2CppFullySharedGenericAny*)&il2cppRetVal, method);
-	return il2cppRetVal;
+	return ((  IntersectNode_tB1CF83EEBA90B0A14D3D26B281FB389770AF60CC* (*) (List_1_t762FB7D85EDD20C0C53C1361807B0DE03606E1E9*, int32_t, const RuntimeMethod*))List_1_get_Item_m33561245D64798C2AB07584C0EC4F240E4839A38_gshared)(__this, ___index0, method);
 }
 // System.Boolean Cinemachine.ClipperLib/Clipper::EdgesAdjacent(Cinemachine.ClipperLib/IntersectNode)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Clipper_EdgesAdjacent_m8CB2FDA541E506262090D1B39A8585158A4CDD50 (Clipper_t2CB022C7BAC01EB2FDE672FC25B30C7F7DE2303A* __this, IntersectNode_tB1CF83EEBA90B0A14D3D26B281FB389770AF60CC* ___inode0, const RuntimeMethod* method) ;
 // System.Void System.Collections.Generic.List`1<Cinemachine.ClipperLib/IntersectNode>::set_Item(System.Int32,T)
 inline void List_1_set_Item_mFA5226F74443EE02E8C6DD5DE8938A67CB884F57 (List_1_t762FB7D85EDD20C0C53C1361807B0DE03606E1E9* __this, int32_t ___index0, IntersectNode_tB1CF83EEBA90B0A14D3D26B281FB389770AF60CC* ___value1, const RuntimeMethod* method)
 {
-	((  void (*) (List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*, int32_t, /*Unity.IL2CPP.Metadata.__Il2CppFullySharedGenericType*/Il2CppFullySharedGenericAny, const RuntimeMethod*))List_1_set_Item_m9A958091885CC5363CCFE9F0BC472EAFCB56C813_gshared)((List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*)__this, ___index0, (Il2CppFullySharedGenericAny)___value1, method);
+	((  void (*) (List_1_t762FB7D85EDD20C0C53C1361807B0DE03606E1E9*, int32_t, IntersectNode_tB1CF83EEBA90B0A14D3D26B281FB389770AF60CC*, const RuntimeMethod*))List_1_set_Item_m3C58DBC69A321AF2826595584FF3E9F43C07EA56_gshared)(__this, ___index0, ___value1, method);
 }
 // System.Int64 Cinemachine.ClipperLib/Clipper::Round(System.Double)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int64_t Clipper_Round_m78ACE5F3E2024496D033C4573B6815ED5F07BA47 (double ___value0, const RuntimeMethod* method) ;
@@ -2604,69 +2655,65 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Clipper_IsIntermediate_mDB13F1C11F973F43
 // System.Collections.Generic.List`1/Enumerator<T> System.Collections.Generic.List`1<System.Collections.Generic.List`1<Cinemachine.ClipperLib/IntPoint>>::GetEnumerator()
 inline Enumerator_t81E7BC2C4AFB10AD8941F6F9BF613541A749A9C5 List_1_GetEnumerator_m9865D2A6023BF15CE2F05EC3A2BD0A1ED1F72D43 (List_1_tD3D80A48908E0B8646110C913780E72E2157A541* __this, const RuntimeMethod* method)
 {
-	Enumerator_t81E7BC2C4AFB10AD8941F6F9BF613541A749A9C5 il2cppRetVal;
-	((  void (*) (List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*, Enumerator_tF5AC6CD19D283FBD724440520CEE68FE2602F7AF*, const RuntimeMethod*))List_1_GetEnumerator_m8B2A92ACD4FBA5FBDC3F6F4F5C23A0DDF491DA61_gshared)((List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*)__this, (Enumerator_tF5AC6CD19D283FBD724440520CEE68FE2602F7AF*)&il2cppRetVal, method);
-	return il2cppRetVal;
+	return ((  Enumerator_t81E7BC2C4AFB10AD8941F6F9BF613541A749A9C5 (*) (List_1_tD3D80A48908E0B8646110C913780E72E2157A541*, const RuntimeMethod*))List_1_GetEnumerator_mD8294A7FA2BEB1929487127D476F8EC1CDC23BFC_gshared)(__this, method);
 }
 // System.Void System.Collections.Generic.List`1/Enumerator<System.Collections.Generic.List`1<Cinemachine.ClipperLib/IntPoint>>::Dispose()
 inline void Enumerator_Dispose_m677FC8F8D71757745C78555FC7FDEB9B90F18E6D (Enumerator_t81E7BC2C4AFB10AD8941F6F9BF613541A749A9C5* __this, const RuntimeMethod* method)
 {
-	((  void (*) (Enumerator_tF5AC6CD19D283FBD724440520CEE68FE2602F7AF*, const RuntimeMethod*))Enumerator_Dispose_mFE1EBE6F6425283FEAEAE7C79D02CDE4F9D367E8_gshared)((Enumerator_tF5AC6CD19D283FBD724440520CEE68FE2602F7AF*)__this, method);
+	((  void (*) (Enumerator_t81E7BC2C4AFB10AD8941F6F9BF613541A749A9C5*, const RuntimeMethod*))Enumerator_Dispose_mD9DC3E3C3697830A4823047AB29A77DBBB5ED419_gshared)(__this, method);
 }
 // T System.Collections.Generic.List`1/Enumerator<System.Collections.Generic.List`1<Cinemachine.ClipperLib/IntPoint>>::get_Current()
 inline List_1_tFFB65DC939B85D88A1FA5032C24DA82DD9685B4C* Enumerator_get_Current_m89DC75068BCAAAA94D88C74FBD233EE5F3E96644_inline (Enumerator_t81E7BC2C4AFB10AD8941F6F9BF613541A749A9C5* __this, const RuntimeMethod* method)
 {
-	List_1_tFFB65DC939B85D88A1FA5032C24DA82DD9685B4C* il2cppRetVal;
-	((  void (*) (Enumerator_tF5AC6CD19D283FBD724440520CEE68FE2602F7AF*, Il2CppFullySharedGenericAny*, const RuntimeMethod*))Enumerator_get_Current_m8B42D4B2DE853B9D11B997120CD0228D4780E394_gshared_inline)((Enumerator_tF5AC6CD19D283FBD724440520CEE68FE2602F7AF*)__this, (Il2CppFullySharedGenericAny*)&il2cppRetVal, method);
-	return il2cppRetVal;
+	return ((  List_1_tFFB65DC939B85D88A1FA5032C24DA82DD9685B4C* (*) (Enumerator_t81E7BC2C4AFB10AD8941F6F9BF613541A749A9C5*, const RuntimeMethod*))Enumerator_get_Current_m6330F15D18EE4F547C05DF9BF83C5EB710376027_gshared_inline)(__this, method);
 }
 // System.Void System.Collections.Generic.List`1<Cinemachine.ClipperLib/IntPoint>::Reverse()
 inline void List_1_Reverse_mF0F13BCF460823FB136A0964BA8A8E3B30CAB5C9 (List_1_tFFB65DC939B85D88A1FA5032C24DA82DD9685B4C* __this, const RuntimeMethod* method)
 {
-	((  void (*) (List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*, const RuntimeMethod*))List_1_Reverse_m31924FC6445F9A1633DA40A8930F89E271B477F2_gshared)((List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*)__this, method);
+	((  void (*) (List_1_tFFB65DC939B85D88A1FA5032C24DA82DD9685B4C*, const RuntimeMethod*))List_1_Reverse_mF0F13BCF460823FB136A0964BA8A8E3B30CAB5C9_gshared)(__this, method);
 }
 // System.Boolean System.Collections.Generic.List`1/Enumerator<System.Collections.Generic.List`1<Cinemachine.ClipperLib/IntPoint>>::MoveNext()
 inline bool Enumerator_MoveNext_m85FDC916AFDB03C731C1DE85A1AD64070EC621D0 (Enumerator_t81E7BC2C4AFB10AD8941F6F9BF613541A749A9C5* __this, const RuntimeMethod* method)
 {
-	return ((  bool (*) (Enumerator_tF5AC6CD19D283FBD724440520CEE68FE2602F7AF*, const RuntimeMethod*))Enumerator_MoveNext_m8D8E5E878AF0A88A535AB1AB5BA4F23E151A678A_gshared)((Enumerator_tF5AC6CD19D283FBD724440520CEE68FE2602F7AF*)__this, method);
+	return ((  bool (*) (Enumerator_t81E7BC2C4AFB10AD8941F6F9BF613541A749A9C5*, const RuntimeMethod*))Enumerator_MoveNext_mE921CC8F29FBBDE7CC3209A0ED0D921D58D00BCB_gshared)(__this, method);
 }
 // System.Double Cinemachine.ClipperLib/Clipper::Area(System.Collections.Generic.List`1<Cinemachine.ClipperLib/IntPoint>)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double Clipper_Area_m2760354539B085C806907E2409045FAA37B13222 (List_1_tFFB65DC939B85D88A1FA5032C24DA82DD9685B4C* ___poly0, const RuntimeMethod* method) ;
 // System.Void System.Collections.Generic.List`1<System.Collections.Generic.List`1<Cinemachine.ClipperLib/IntPoint>>::set_Capacity(System.Int32)
 inline void List_1_set_Capacity_mBB81853DDC94D55D5D7B50D95C949BADB3C79538 (List_1_tD3D80A48908E0B8646110C913780E72E2157A541* __this, int32_t ___value0, const RuntimeMethod* method)
 {
-	((  void (*) (List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*, int32_t, const RuntimeMethod*))List_1_set_Capacity_mD365C22FA3D32D70A2088AB13116E7BA5FBF0BFB_gshared)((List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*)__this, ___value0, method);
+	((  void (*) (List_1_tD3D80A48908E0B8646110C913780E72E2157A541*, int32_t, const RuntimeMethod*))List_1_set_Capacity_mD826E33A9E5EBC19C714653217071790693E0B95_gshared)(__this, ___value0, method);
 }
 // System.Int32 Cinemachine.ClipperLib/Clipper::PointCount(Cinemachine.ClipperLib/OutPt)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Clipper_PointCount_m5DAEA2750B49726731544F0F61B694295D5A4FC8 (Clipper_t2CB022C7BAC01EB2FDE672FC25B30C7F7DE2303A* __this, OutPt_t907B1B75F22C705CB41CEB883769B0623C6EF957* ___pts0, const RuntimeMethod* method) ;
 // System.Void System.Collections.Generic.List`1<Cinemachine.ClipperLib/IntPoint>::.ctor(System.Int32)
 inline void List_1__ctor_m0C9FCAA3EEB3FA8D74A57EB3231442F5F0949DC6 (List_1_tFFB65DC939B85D88A1FA5032C24DA82DD9685B4C* __this, int32_t ___capacity0, const RuntimeMethod* method)
 {
-	((  void (*) (List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*, int32_t, const RuntimeMethod*))List_1__ctor_m3069CACB5775E013107F559C825422266A09F9E8_gshared)((List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*)__this, ___capacity0, method);
+	((  void (*) (List_1_tFFB65DC939B85D88A1FA5032C24DA82DD9685B4C*, int32_t, const RuntimeMethod*))List_1__ctor_m0C9FCAA3EEB3FA8D74A57EB3231442F5F0949DC6_gshared)(__this, ___capacity0, method);
 }
 // System.Void System.Collections.Generic.List`1<Cinemachine.ClipperLib/IntPoint>::Add(T)
 inline void List_1_Add_m1892D847DB76252F6D5CA3132FE4ADBFFB0DDFA0_inline (List_1_tFFB65DC939B85D88A1FA5032C24DA82DD9685B4C* __this, IntPoint_tB90EC7E3658ADAC927B4405BEFE1CBAD98BBC674 ___item0, const RuntimeMethod* method)
 {
-	((  void (*) (List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*, /*Unity.IL2CPP.Metadata.__Il2CppFullySharedGenericType*/Il2CppFullySharedGenericAny, const RuntimeMethod*))List_1_Add_mD4F3498FBD3BDD3F03CBCFB38041CBAC9C28CAFC_gshared_inline)((List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*)__this, (Il2CppFullySharedGenericAny)&___item0, method);
+	((  void (*) (List_1_tFFB65DC939B85D88A1FA5032C24DA82DD9685B4C*, IntPoint_tB90EC7E3658ADAC927B4405BEFE1CBAD98BBC674, const RuntimeMethod*))List_1_Add_m1892D847DB76252F6D5CA3132FE4ADBFFB0DDFA0_gshared_inline)(__this, ___item0, method);
 }
 // System.Void System.Collections.Generic.List`1<System.Collections.Generic.List`1<Cinemachine.ClipperLib/IntPoint>>::Add(T)
 inline void List_1_Add_m91C4D95B34BA9009B7C8B6905B55C22BC94B571A_inline (List_1_tD3D80A48908E0B8646110C913780E72E2157A541* __this, List_1_tFFB65DC939B85D88A1FA5032C24DA82DD9685B4C* ___item0, const RuntimeMethod* method)
 {
-	((  void (*) (List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*, /*Unity.IL2CPP.Metadata.__Il2CppFullySharedGenericType*/Il2CppFullySharedGenericAny, const RuntimeMethod*))List_1_Add_mD4F3498FBD3BDD3F03CBCFB38041CBAC9C28CAFC_gshared_inline)((List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*)__this, (Il2CppFullySharedGenericAny)___item0, method);
+	((  void (*) (List_1_tD3D80A48908E0B8646110C913780E72E2157A541*, List_1_tFFB65DC939B85D88A1FA5032C24DA82DD9685B4C*, const RuntimeMethod*))List_1_Add_mEBCF994CC3814631017F46A387B1A192ED6C85C7_gshared_inline)(__this, ___item0, method);
 }
 // System.Void Cinemachine.ClipperLib/PolyTree::Clear()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PolyTree_Clear_m9590AC2AB10E2126CDA65C9824B31FC88E191185 (PolyTree_t6BC36A91ED216BC6148B566797C40651292A9BBD* __this, const RuntimeMethod* method) ;
 // System.Void System.Collections.Generic.List`1<Cinemachine.ClipperLib/PolyNode>::set_Capacity(System.Int32)
 inline void List_1_set_Capacity_m8AF0D30918276002D4457FFD304E0280AA6E984D (List_1_t6B363664E747D5A84578F8282376CB04CDF801F4* __this, int32_t ___value0, const RuntimeMethod* method)
 {
-	((  void (*) (List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*, int32_t, const RuntimeMethod*))List_1_set_Capacity_mD365C22FA3D32D70A2088AB13116E7BA5FBF0BFB_gshared)((List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*)__this, ___value0, method);
+	((  void (*) (List_1_t6B363664E747D5A84578F8282376CB04CDF801F4*, int32_t, const RuntimeMethod*))List_1_set_Capacity_mD826E33A9E5EBC19C714653217071790693E0B95_gshared)(__this, ___value0, method);
 }
 // System.Void Cinemachine.ClipperLib/Clipper::FixHoleLinkage(Cinemachine.ClipperLib/OutRec)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper_FixHoleLinkage_m8383DDB3534A268C9D0BCE5A923FCF4B1284C83B (Clipper_t2CB022C7BAC01EB2FDE672FC25B30C7F7DE2303A* __this, OutRec_t6D2B067484E113CECC5ABBC74D55E034B74C9BC8* ___outRec0, const RuntimeMethod* method) ;
 // System.Void System.Collections.Generic.List`1<Cinemachine.ClipperLib/IntPoint>::set_Capacity(System.Int32)
 inline void List_1_set_Capacity_m4B1A8AFCE2BEE0C3570F54204394D25D1235F9CF (List_1_tFFB65DC939B85D88A1FA5032C24DA82DD9685B4C* __this, int32_t ___value0, const RuntimeMethod* method)
 {
-	((  void (*) (List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*, int32_t, const RuntimeMethod*))List_1_set_Capacity_mD365C22FA3D32D70A2088AB13116E7BA5FBF0BFB_gshared)((List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*)__this, ___value0, method);
+	((  void (*) (List_1_tFFB65DC939B85D88A1FA5032C24DA82DD9685B4C*, int32_t, const RuntimeMethod*))List_1_set_Capacity_m4B1A8AFCE2BEE0C3570F54204394D25D1235F9CF_gshared)(__this, ___value0, method);
 }
 // System.Void Cinemachine.ClipperLib/PolyNode::set_IsOpen(System.Boolean)
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void PolyNode_set_IsOpen_mAD635554DCA3C131384AC9FB2D63F8E7D2132974_inline (PolyNode_t6632AEAB07BC9B993428D4EE7C9E18EDCE3BAD27* __this, bool ___value0, const RuntimeMethod* method) ;
@@ -2703,7 +2750,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper_FixupFirstLefts3_m5FE8223D4C067F
 // System.Void System.Collections.Generic.List`1<System.Collections.Generic.List`1<Cinemachine.ClipperLib/IntPoint>>::.ctor()
 inline void List_1__ctor_m85A1A83D119CC5BFE0C4A6352E38591B5C6D5F14 (List_1_tD3D80A48908E0B8646110C913780E72E2157A541* __this, const RuntimeMethod* method)
 {
-	((  void (*) (List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*, const RuntimeMethod*))List_1__ctor_m0AFBAEA7EC427E32CC9CA267B1930DC5DF67A374_gshared)((List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*)__this, method);
+	((  void (*) (List_1_tD3D80A48908E0B8646110C913780E72E2157A541*, const RuntimeMethod*))List_1__ctor_m7F078BB342729BDF11327FD89D7872265328F690_gshared)(__this, method);
 }
 // System.Void Cinemachine.ClipperLib/Clipper::.ctor(System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper__ctor_mFE1DEBE1F52B653F893824C803EC03A94560C146 (Clipper_t2CB022C7BAC01EB2FDE672FC25B30C7F7DE2303A* __this, int32_t ___InitOptions0, const RuntimeMethod* method) ;
@@ -2720,33 +2767,29 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Clipper_SlopesNearCollinear_m1B48785099E
 // System.Void System.Collections.Generic.List`1<System.Collections.Generic.List`1<Cinemachine.ClipperLib/IntPoint>>::.ctor(System.Int32)
 inline void List_1__ctor_m85174C59CE267F8DC776FA840D59A80CDD334074 (List_1_tD3D80A48908E0B8646110C913780E72E2157A541* __this, int32_t ___capacity0, const RuntimeMethod* method)
 {
-	((  void (*) (List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*, int32_t, const RuntimeMethod*))List_1__ctor_m3069CACB5775E013107F559C825422266A09F9E8_gshared)((List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*)__this, ___capacity0, method);
+	((  void (*) (List_1_tD3D80A48908E0B8646110C913780E72E2157A541*, int32_t, const RuntimeMethod*))List_1__ctor_m76CBBC3E2F0583F5AD30CE592CEA1225C06A0428_gshared)(__this, ___capacity0, method);
 }
 // System.Collections.Generic.List`1<Cinemachine.ClipperLib/IntPoint> Cinemachine.ClipperLib/Clipper::CleanPolygon(System.Collections.Generic.List`1<Cinemachine.ClipperLib/IntPoint>,System.Double)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_tFFB65DC939B85D88A1FA5032C24DA82DD9685B4C* Clipper_CleanPolygon_m857A36C7AA73F1E088EEBEC414A563CFC798C59D (List_1_tFFB65DC939B85D88A1FA5032C24DA82DD9685B4C* ___path0, double ___distance1, const RuntimeMethod* method) ;
 // System.Collections.Generic.List`1/Enumerator<T> System.Collections.Generic.List`1<Cinemachine.ClipperLib/IntPoint>::GetEnumerator()
 inline Enumerator_t9E0D8EE0EDB0F1F12A6981C83753D9E092808962 List_1_GetEnumerator_m431571965931B9D9656C6613ED2EE2E912470391 (List_1_tFFB65DC939B85D88A1FA5032C24DA82DD9685B4C* __this, const RuntimeMethod* method)
 {
-	Enumerator_t9E0D8EE0EDB0F1F12A6981C83753D9E092808962 il2cppRetVal;
-	((  void (*) (List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*, Enumerator_tF5AC6CD19D283FBD724440520CEE68FE2602F7AF*, const RuntimeMethod*))List_1_GetEnumerator_m8B2A92ACD4FBA5FBDC3F6F4F5C23A0DDF491DA61_gshared)((List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*)__this, (Enumerator_tF5AC6CD19D283FBD724440520CEE68FE2602F7AF*)&il2cppRetVal, method);
-	return il2cppRetVal;
+	return ((  Enumerator_t9E0D8EE0EDB0F1F12A6981C83753D9E092808962 (*) (List_1_tFFB65DC939B85D88A1FA5032C24DA82DD9685B4C*, const RuntimeMethod*))List_1_GetEnumerator_m431571965931B9D9656C6613ED2EE2E912470391_gshared)(__this, method);
 }
 // System.Void System.Collections.Generic.List`1/Enumerator<Cinemachine.ClipperLib/IntPoint>::Dispose()
 inline void Enumerator_Dispose_m5132A9DF2D1F5250D634AE2F70D33ABD5CB6AC07 (Enumerator_t9E0D8EE0EDB0F1F12A6981C83753D9E092808962* __this, const RuntimeMethod* method)
 {
-	((  void (*) (Enumerator_tF5AC6CD19D283FBD724440520CEE68FE2602F7AF*, const RuntimeMethod*))Enumerator_Dispose_mFE1EBE6F6425283FEAEAE7C79D02CDE4F9D367E8_gshared)((Enumerator_tF5AC6CD19D283FBD724440520CEE68FE2602F7AF*)__this, method);
+	((  void (*) (Enumerator_t9E0D8EE0EDB0F1F12A6981C83753D9E092808962*, const RuntimeMethod*))Enumerator_Dispose_m5132A9DF2D1F5250D634AE2F70D33ABD5CB6AC07_gshared)(__this, method);
 }
 // T System.Collections.Generic.List`1/Enumerator<Cinemachine.ClipperLib/IntPoint>::get_Current()
 inline IntPoint_tB90EC7E3658ADAC927B4405BEFE1CBAD98BBC674 Enumerator_get_Current_m7D47AD25A21E7264157F103EA884650BD80D14C6_inline (Enumerator_t9E0D8EE0EDB0F1F12A6981C83753D9E092808962* __this, const RuntimeMethod* method)
 {
-	IntPoint_tB90EC7E3658ADAC927B4405BEFE1CBAD98BBC674 il2cppRetVal;
-	((  void (*) (Enumerator_tF5AC6CD19D283FBD724440520CEE68FE2602F7AF*, Il2CppFullySharedGenericAny*, const RuntimeMethod*))Enumerator_get_Current_m8B42D4B2DE853B9D11B997120CD0228D4780E394_gshared_inline)((Enumerator_tF5AC6CD19D283FBD724440520CEE68FE2602F7AF*)__this, (Il2CppFullySharedGenericAny*)&il2cppRetVal, method);
-	return il2cppRetVal;
+	return ((  IntPoint_tB90EC7E3658ADAC927B4405BEFE1CBAD98BBC674 (*) (Enumerator_t9E0D8EE0EDB0F1F12A6981C83753D9E092808962*, const RuntimeMethod*))Enumerator_get_Current_m7D47AD25A21E7264157F103EA884650BD80D14C6_gshared_inline)(__this, method);
 }
 // System.Boolean System.Collections.Generic.List`1/Enumerator<Cinemachine.ClipperLib/IntPoint>::MoveNext()
 inline bool Enumerator_MoveNext_mA77C6E4D82FD348053E6FFB11D2BA1A40EAF2208 (Enumerator_t9E0D8EE0EDB0F1F12A6981C83753D9E092808962* __this, const RuntimeMethod* method)
 {
-	return ((  bool (*) (Enumerator_tF5AC6CD19D283FBD724440520CEE68FE2602F7AF*, const RuntimeMethod*))Enumerator_MoveNext_m8D8E5E878AF0A88A535AB1AB5BA4F23E151A678A_gshared)((Enumerator_tF5AC6CD19D283FBD724440520CEE68FE2602F7AF*)__this, method);
+	return ((  bool (*) (Enumerator_t9E0D8EE0EDB0F1F12A6981C83753D9E092808962*, const RuntimeMethod*))Enumerator_MoveNext_mA77C6E4D82FD348053E6FFB11D2BA1A40EAF2208_gshared)(__this, method);
 }
 // System.Boolean Cinemachine.ClipperLib/Clipper::Orientation(System.Collections.Generic.List`1<Cinemachine.ClipperLib/IntPoint>)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Clipper_Orientation_mD13687369D060652D837C17410C20FD2A4076907 (List_1_tFFB65DC939B85D88A1FA5032C24DA82DD9685B4C* ___poly0, const RuntimeMethod* method) ;
@@ -2765,26 +2808,22 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR List_1_t6B363664E747D5A84578F8282
 // System.Collections.Generic.List`1/Enumerator<T> System.Collections.Generic.List`1<Cinemachine.ClipperLib/PolyNode>::GetEnumerator()
 inline Enumerator_t41C77074F750CAB8F31DACA773A796706509B59F List_1_GetEnumerator_m8C6B167CC8BF6D898E4F58D9F5D833AC64CF6FE3 (List_1_t6B363664E747D5A84578F8282376CB04CDF801F4* __this, const RuntimeMethod* method)
 {
-	Enumerator_t41C77074F750CAB8F31DACA773A796706509B59F il2cppRetVal;
-	((  void (*) (List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*, Enumerator_tF5AC6CD19D283FBD724440520CEE68FE2602F7AF*, const RuntimeMethod*))List_1_GetEnumerator_m8B2A92ACD4FBA5FBDC3F6F4F5C23A0DDF491DA61_gshared)((List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*)__this, (Enumerator_tF5AC6CD19D283FBD724440520CEE68FE2602F7AF*)&il2cppRetVal, method);
-	return il2cppRetVal;
+	return ((  Enumerator_t41C77074F750CAB8F31DACA773A796706509B59F (*) (List_1_t6B363664E747D5A84578F8282376CB04CDF801F4*, const RuntimeMethod*))List_1_GetEnumerator_mD8294A7FA2BEB1929487127D476F8EC1CDC23BFC_gshared)(__this, method);
 }
 // System.Void System.Collections.Generic.List`1/Enumerator<Cinemachine.ClipperLib/PolyNode>::Dispose()
 inline void Enumerator_Dispose_mFD99B9A0A8D29798922195168E3F804D0B88D37C (Enumerator_t41C77074F750CAB8F31DACA773A796706509B59F* __this, const RuntimeMethod* method)
 {
-	((  void (*) (Enumerator_tF5AC6CD19D283FBD724440520CEE68FE2602F7AF*, const RuntimeMethod*))Enumerator_Dispose_mFE1EBE6F6425283FEAEAE7C79D02CDE4F9D367E8_gshared)((Enumerator_tF5AC6CD19D283FBD724440520CEE68FE2602F7AF*)__this, method);
+	((  void (*) (Enumerator_t41C77074F750CAB8F31DACA773A796706509B59F*, const RuntimeMethod*))Enumerator_Dispose_mD9DC3E3C3697830A4823047AB29A77DBBB5ED419_gshared)(__this, method);
 }
 // T System.Collections.Generic.List`1/Enumerator<Cinemachine.ClipperLib/PolyNode>::get_Current()
 inline PolyNode_t6632AEAB07BC9B993428D4EE7C9E18EDCE3BAD27* Enumerator_get_Current_mD93E1A579453BD323C49CA433F897A49C70552DD_inline (Enumerator_t41C77074F750CAB8F31DACA773A796706509B59F* __this, const RuntimeMethod* method)
 {
-	PolyNode_t6632AEAB07BC9B993428D4EE7C9E18EDCE3BAD27* il2cppRetVal;
-	((  void (*) (Enumerator_tF5AC6CD19D283FBD724440520CEE68FE2602F7AF*, Il2CppFullySharedGenericAny*, const RuntimeMethod*))Enumerator_get_Current_m8B42D4B2DE853B9D11B997120CD0228D4780E394_gshared_inline)((Enumerator_tF5AC6CD19D283FBD724440520CEE68FE2602F7AF*)__this, (Il2CppFullySharedGenericAny*)&il2cppRetVal, method);
-	return il2cppRetVal;
+	return ((  PolyNode_t6632AEAB07BC9B993428D4EE7C9E18EDCE3BAD27* (*) (Enumerator_t41C77074F750CAB8F31DACA773A796706509B59F*, const RuntimeMethod*))Enumerator_get_Current_m6330F15D18EE4F547C05DF9BF83C5EB710376027_gshared_inline)(__this, method);
 }
 // System.Boolean System.Collections.Generic.List`1/Enumerator<Cinemachine.ClipperLib/PolyNode>::MoveNext()
 inline bool Enumerator_MoveNext_m266A13BB5A87DC866B571DB4E16507C80C27FA27 (Enumerator_t41C77074F750CAB8F31DACA773A796706509B59F* __this, const RuntimeMethod* method)
 {
-	return ((  bool (*) (Enumerator_tF5AC6CD19D283FBD724440520CEE68FE2602F7AF*, const RuntimeMethod*))Enumerator_MoveNext_m8D8E5E878AF0A88A535AB1AB5BA4F23E151A678A_gshared)((Enumerator_tF5AC6CD19D283FBD724440520CEE68FE2602F7AF*)__this, method);
+	return ((  bool (*) (Enumerator_t41C77074F750CAB8F31DACA773A796706509B59F*, const RuntimeMethod*))Enumerator_MoveNext_mE921CC8F29FBBDE7CC3209A0ED0D921D58D00BCB_gshared)(__this, method);
 }
 // System.Int32 Cinemachine.ClipperLib/PolyNode::get_ChildCount()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PolyNode_get_ChildCount_mC79FA922B67A88E6E940285881BDB16109D57C67 (PolyNode_t6632AEAB07BC9B993428D4EE7C9E18EDCE3BAD27* __this, const RuntimeMethod* method) ;
@@ -31255,31 +31294,26 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR List_1_t6B363664E747D5A84578F8282
 		return L_0;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t List_1_get_Count_mD2ED26ACAF3BAF386FFEA83893BA51DB9FD8BA30_gshared_inline (List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A* __this, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t List_1_get_Count_m4407E4C389F22B8CEC282C15D56516658746C383_gshared_inline (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, const RuntimeMethod* method) 
 {
 	{
 		int32_t L_0 = (int32_t)__this->____size_2;
 		return L_0;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Add_mD4F3498FBD3BDD3F03CBCFB38041CBAC9C28CAFC_gshared_inline (List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A* __this, /*Unity.IL2CPP.Metadata.__Il2CppFullySharedGenericType*/Il2CppFullySharedGenericAny ___item0, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Add_mEBCF994CC3814631017F46A387B1A192ED6C85C7_gshared_inline (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, RuntimeObject* ___item0, const RuntimeMethod* method) 
 {
-	// sizeof(T)
-	const uint32_t SizeOf_T_t664E2061A913AF1FEE499655BC64F0FDE10D2A5E = il2cpp_codegen_sizeof(il2cpp_rgctx_data(method->klass->rgctx_data, 9));
-	// T
-	const Il2CppFullySharedGenericAny L_8 = alloca(SizeOf_T_t664E2061A913AF1FEE499655BC64F0FDE10D2A5E);
-	const Il2CppFullySharedGenericAny L_9 = L_8;
-	__Il2CppFullySharedGenericTypeU5BU5D_tCAB6D060972DD49223A834B7EEFEB9FE2D003BEC* V_0 = NULL;
+	ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* V_0 = NULL;
 	int32_t V_1 = 0;
 	{
 		int32_t L_0 = (int32_t)__this->____version_3;
 		__this->____version_3 = ((int32_t)il2cpp_codegen_add(L_0, 1));
-		__Il2CppFullySharedGenericTypeU5BU5D_tCAB6D060972DD49223A834B7EEFEB9FE2D003BEC* L_1 = (__Il2CppFullySharedGenericTypeU5BU5D_tCAB6D060972DD49223A834B7EEFEB9FE2D003BEC*)__this->____items_1;
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_1 = (ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)__this->____items_1;
 		V_0 = L_1;
 		int32_t L_2 = (int32_t)__this->____size_2;
 		V_1 = L_2;
 		int32_t L_3 = V_1;
-		__Il2CppFullySharedGenericTypeU5BU5D_tCAB6D060972DD49223A834B7EEFEB9FE2D003BEC* L_4 = V_0;
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_4 = V_0;
 		NullCheck(L_4);
 		if ((!(((uint32_t)L_3) < ((uint32_t)((int32_t)(((RuntimeArray*)L_4)->max_length))))))
 		{
@@ -31289,49 +31323,46 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Add_mD4F3498FBD3BDD3F
 	{
 		int32_t L_5 = V_1;
 		__this->____size_2 = ((int32_t)il2cpp_codegen_add(L_5, 1));
-		__Il2CppFullySharedGenericTypeU5BU5D_tCAB6D060972DD49223A834B7EEFEB9FE2D003BEC* L_6 = V_0;
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_6 = V_0;
 		int32_t L_7 = V_1;
-		il2cpp_codegen_memcpy(L_8, (il2cpp_codegen_class_is_value_type(il2cpp_rgctx_data(method->klass->rgctx_data, 9)) ? ___item0 : &___item0), SizeOf_T_t664E2061A913AF1FEE499655BC64F0FDE10D2A5E);
+		RuntimeObject* L_8 = ___item0;
 		NullCheck(L_6);
-		il2cpp_codegen_memcpy((L_6)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_7)), L_8, SizeOf_T_t664E2061A913AF1FEE499655BC64F0FDE10D2A5E);
-		Il2CppCodeGenWriteBarrierForClass(il2cpp_rgctx_data(method->klass->rgctx_data, 9), (void**)(L_6)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_7)), (void*)L_8);
+		(L_6)->SetAt(static_cast<il2cpp_array_size_t>(L_7), (RuntimeObject*)L_8);
 		return;
 	}
 
 IL_0034:
 	{
-		il2cpp_codegen_memcpy(L_9, (il2cpp_codegen_class_is_value_type(il2cpp_rgctx_data(method->klass->rgctx_data, 9)) ? ___item0 : &___item0), SizeOf_T_t664E2061A913AF1FEE499655BC64F0FDE10D2A5E);
-		InvokerActionInvoker1< Il2CppFullySharedGenericAny >::Invoke(il2cpp_codegen_get_direct_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 14)), il2cpp_rgctx_method(method->klass->rgctx_data, 14), __this, (il2cpp_codegen_class_is_value_type(il2cpp_rgctx_data(method->klass->rgctx_data, 9)) ? L_9: *(void**)L_9));
+		RuntimeObject* L_9 = ___item0;
+		((  void (*) (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 11)))(__this, L_9, il2cpp_rgctx_method(method->klass->rgctx_data, 11));
 		return;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Clear_mD615D1BCB2C9DD91DAD86A2F9E5CF1DFFCBF7925_gshared_inline (List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A* __this, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Clear_m16C1F2C61FED5955F10EB36BC1CB2DF34B128994_gshared_inline (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, const RuntimeMethod* method) 
 {
 	int32_t V_0 = 0;
 	{
 		int32_t L_0 = (int32_t)__this->____version_3;
 		__this->____version_3 = ((int32_t)il2cpp_codegen_add(L_0, 1));
-		bool L_1;
-		L_1 = il2cpp_codegen_is_reference_or_contains_references(il2cpp_rgctx_method(method->klass->rgctx_data, 22));
-		if (!L_1)
+		if (!true)
 		{
 			goto IL_0035;
 		}
 	}
 	{
-		int32_t L_2 = (int32_t)__this->____size_2;
-		V_0 = L_2;
+		int32_t L_1 = (int32_t)__this->____size_2;
+		V_0 = L_1;
 		__this->____size_2 = 0;
-		int32_t L_3 = V_0;
-		if ((((int32_t)L_3) <= ((int32_t)0)))
+		int32_t L_2 = V_0;
+		if ((((int32_t)L_2) <= ((int32_t)0)))
 		{
 			goto IL_003c;
 		}
 	}
 	{
-		__Il2CppFullySharedGenericTypeU5BU5D_tCAB6D060972DD49223A834B7EEFEB9FE2D003BEC* L_4 = (__Il2CppFullySharedGenericTypeU5BU5D_tCAB6D060972DD49223A834B7EEFEB9FE2D003BEC*)__this->____items_1;
-		int32_t L_5 = V_0;
-		Array_Clear_m48B57EC27CADC3463CA98A33373D557DA587FF1B((RuntimeArray*)L_4, 0, L_5, NULL);
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_3 = (ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)__this->____items_1;
+		int32_t L_4 = V_0;
+		Array_Clear_m48B57EC27CADC3463CA98A33373D557DA587FF1B((RuntimeArray*)L_3, 0, L_4, NULL);
 		return;
 	}
 
@@ -31345,16 +31376,62 @@ IL_003c:
 		return;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Enumerator_get_Current_m8B42D4B2DE853B9D11B997120CD0228D4780E394_gshared_inline (Enumerator_tF5AC6CD19D283FBD724440520CEE68FE2602F7AF* __this, Il2CppFullySharedGenericAny* il2cppRetVal, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t List_1_get_Count_m578BA59F69944F4E5EB262CFC17DCD1FB6F4610D_gshared_inline (List_1_tFFB65DC939B85D88A1FA5032C24DA82DD9685B4C* __this, const RuntimeMethod* method) 
 {
-	// sizeof(T)
-	const uint32_t SizeOf_T_t010616E3077234188F9BB4FAF369F8571BC5F2E1 = il2cpp_codegen_sizeof(il2cpp_rgctx_data(InitializedTypeInfo(method->klass)->rgctx_data, 2));
-	// T
-	const Il2CppFullySharedGenericAny L_0 = alloca(SizeOf_T_t010616E3077234188F9BB4FAF369F8571BC5F2E1);
 	{
-		il2cpp_codegen_memcpy(L_0, il2cpp_codegen_get_instance_field_data_pointer(__this, il2cpp_rgctx_field(il2cpp_rgctx_data(InitializedTypeInfo(method->klass)->rgctx_data, 1),3)), SizeOf_T_t010616E3077234188F9BB4FAF369F8571BC5F2E1);
-		il2cpp_codegen_memcpy(il2cppRetVal, L_0, SizeOf_T_t010616E3077234188F9BB4FAF369F8571BC5F2E1);
+		int32_t L_0 = (int32_t)__this->____size_2;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_get_Current_m6330F15D18EE4F547C05DF9BF83C5EB710376027_gshared_inline (Enumerator_t9473BAB568A27E2339D48C1F91319E0F6D244D7A* __this, const RuntimeMethod* method) 
+{
+	{
+		RuntimeObject* L_0 = (RuntimeObject*)__this->____current_3;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Add_m1892D847DB76252F6D5CA3132FE4ADBFFB0DDFA0_gshared_inline (List_1_tFFB65DC939B85D88A1FA5032C24DA82DD9685B4C* __this, IntPoint_tB90EC7E3658ADAC927B4405BEFE1CBAD98BBC674 ___item0, const RuntimeMethod* method) 
+{
+	IntPointU5BU5D_t7B403FCBEBD7A3039D08F8F48FEDD0295B7FFD13* V_0 = NULL;
+	int32_t V_1 = 0;
+	{
+		int32_t L_0 = (int32_t)__this->____version_3;
+		__this->____version_3 = ((int32_t)il2cpp_codegen_add(L_0, 1));
+		IntPointU5BU5D_t7B403FCBEBD7A3039D08F8F48FEDD0295B7FFD13* L_1 = (IntPointU5BU5D_t7B403FCBEBD7A3039D08F8F48FEDD0295B7FFD13*)__this->____items_1;
+		V_0 = L_1;
+		int32_t L_2 = (int32_t)__this->____size_2;
+		V_1 = L_2;
+		int32_t L_3 = V_1;
+		IntPointU5BU5D_t7B403FCBEBD7A3039D08F8F48FEDD0295B7FFD13* L_4 = V_0;
+		NullCheck(L_4);
+		if ((!(((uint32_t)L_3) < ((uint32_t)((int32_t)(((RuntimeArray*)L_4)->max_length))))))
+		{
+			goto IL_0034;
+		}
+	}
+	{
+		int32_t L_5 = V_1;
+		__this->____size_2 = ((int32_t)il2cpp_codegen_add(L_5, 1));
+		IntPointU5BU5D_t7B403FCBEBD7A3039D08F8F48FEDD0295B7FFD13* L_6 = V_0;
+		int32_t L_7 = V_1;
+		IntPoint_tB90EC7E3658ADAC927B4405BEFE1CBAD98BBC674 L_8 = ___item0;
+		NullCheck(L_6);
+		(L_6)->SetAt(static_cast<il2cpp_array_size_t>(L_7), (IntPoint_tB90EC7E3658ADAC927B4405BEFE1CBAD98BBC674)L_8);
 		return;
+	}
+
+IL_0034:
+	{
+		IntPoint_tB90EC7E3658ADAC927B4405BEFE1CBAD98BBC674 L_9 = ___item0;
+		((  void (*) (List_1_tFFB65DC939B85D88A1FA5032C24DA82DD9685B4C*, IntPoint_tB90EC7E3658ADAC927B4405BEFE1CBAD98BBC674, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 11)))(__this, L_9, il2cpp_rgctx_method(method->klass->rgctx_data, 11));
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR IntPoint_tB90EC7E3658ADAC927B4405BEFE1CBAD98BBC674 Enumerator_get_Current_m7D47AD25A21E7264157F103EA884650BD80D14C6_gshared_inline (Enumerator_t9E0D8EE0EDB0F1F12A6981C83753D9E092808962* __this, const RuntimeMethod* method) 
+{
+	{
+		IntPoint_tB90EC7E3658ADAC927B4405BEFE1CBAD98BBC674 L_0 = (IntPoint_tB90EC7E3658ADAC927B4405BEFE1CBAD98BBC674)__this->____current_3;
+		return L_0;
 	}
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_Normalize_m6120F119433C5B60BBB28731D3D4A0DA50A84DDD_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___value0, const RuntimeMethod* method) 

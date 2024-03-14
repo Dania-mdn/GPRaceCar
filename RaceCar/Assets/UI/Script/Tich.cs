@@ -50,6 +50,7 @@ public class Tich : MonoBehaviour
                 RewardAndSale[0].SetActive(false);
                 RewardAndSale[1].SetActive(false);
                 RewardAndSale[2].SetActive(false);
+                RewardAndSale[3].SetActive(false);
             }
         }
     }
@@ -108,6 +109,7 @@ public class Tich : MonoBehaviour
             RewardAndSale[0].SetActive(true);
             RewardAndSale[1].SetActive(true);
             RewardAndSale[2].SetActive(true);
+            RewardAndSale[3].SetActive(true);
             PlayerPrefs.SetInt("TichFirst", 1);
             SkipButton.SetActive(false);
         }
@@ -121,6 +123,7 @@ public class Tich : MonoBehaviour
         RewardAndSale[0].SetActive(true);
         RewardAndSale[1].SetActive(true);
         RewardAndSale[2].SetActive(true);
+        RewardAndSale[3].SetActive(true);
         Race.SetActive(true);
         Destroy(gameObject);
     }

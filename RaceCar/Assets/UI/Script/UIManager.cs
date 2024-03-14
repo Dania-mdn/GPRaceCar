@@ -50,7 +50,7 @@ public class UIManager : MonoBehaviour
         EventManager.MuteAudio -= AudioMute;
         EventManager.PlayAudio -= AudioPlay;
     }
-    private void Start()
+    private void Awake()
     {
         if (PlayerPrefs.HasKey("MuteAudio"))
             TogglAudio.isOn = true;

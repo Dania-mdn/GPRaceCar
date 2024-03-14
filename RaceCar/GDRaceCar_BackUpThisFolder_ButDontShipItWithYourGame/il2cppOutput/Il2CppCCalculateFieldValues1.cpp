@@ -3907,32 +3907,30 @@ struct U3CU3Ec_tD324D59E8F3183FEB49DC7AFEC6DFA217257B4AA_StaticFields
 	U3CU3Ec_tD324D59E8F3183FEB49DC7AFEC6DFA217257B4AA* ___U3CU3E9_0;
 	// System.Action`1<GoogleMobileAds.Api.InitializationStatus> Reward/<>c::<>9__8_0
 	Action_1_t61953204BFE962922BA541482E3ECC9BB03FC8EE* ___U3CU3E9__8_0_1;
-	// System.Action`1<GoogleMobileAds.Api.Reward> Reward/<>c::<>9__13_0
-	Action_1_tBD6F5D2699E5306B21143A3CFF0438FBBA10A8CC* ___U3CU3E9__13_0_2;
-	// System.Action`1<GoogleMobileAds.Api.AdValue> Reward/<>c::<>9__14_0
-	Action_1_t96EA761F7BE52B89F4904338B4DF546EB9F1FAFF* ___U3CU3E9__14_0_3;
-	// System.Action Reward/<>c::<>9__14_1
-	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___U3CU3E9__14_1_4;
-	// System.Action Reward/<>c::<>9__14_2
-	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___U3CU3E9__14_2_5;
-	// System.Action Reward/<>c::<>9__14_3
-	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___U3CU3E9__14_3_6;
-	// System.Action Reward/<>c::<>9__14_4
-	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___U3CU3E9__14_4_7;
-	// System.Action`1<GoogleMobileAds.Api.AdError> Reward/<>c::<>9__14_5
-	Action_1_t069366F3AD155AB4638C995045E0A7F46361C0C6* ___U3CU3E9__14_5_8;
-	// System.Action`1<GoogleMobileAds.Api.AdValue> Reward/<>c::<>9__15_0
-	Action_1_t96EA761F7BE52B89F4904338B4DF546EB9F1FAFF* ___U3CU3E9__15_0_9;
-	// System.Action Reward/<>c::<>9__15_1
-	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___U3CU3E9__15_1_10;
-	// System.Action Reward/<>c::<>9__15_2
-	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___U3CU3E9__15_2_11;
-	// System.Action Reward/<>c::<>9__15_3
-	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___U3CU3E9__15_3_12;
-	// System.Action Reward/<>c::<>9__15_4
-	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___U3CU3E9__15_4_13;
-	// System.Action`1<GoogleMobileAds.Api.AdError> Reward/<>c::<>9__15_5
-	Action_1_t069366F3AD155AB4638C995045E0A7F46361C0C6* ___U3CU3E9__15_5_14;
+	// System.Action`1<GoogleMobileAds.Api.Reward> Reward/<>c::<>9__16_0
+	Action_1_tBD6F5D2699E5306B21143A3CFF0438FBBA10A8CC* ___U3CU3E9__16_0_2;
+	// System.Action`1<GoogleMobileAds.Api.AdValue> Reward/<>c::<>9__17_0
+	Action_1_t96EA761F7BE52B89F4904338B4DF546EB9F1FAFF* ___U3CU3E9__17_0_3;
+	// System.Action Reward/<>c::<>9__17_1
+	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___U3CU3E9__17_1_4;
+	// System.Action Reward/<>c::<>9__17_2
+	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___U3CU3E9__17_2_5;
+	// System.Action Reward/<>c::<>9__17_3
+	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___U3CU3E9__17_3_6;
+	// System.Action Reward/<>c::<>9__17_4
+	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___U3CU3E9__17_4_7;
+	// System.Action`1<GoogleMobileAds.Api.AdError> Reward/<>c::<>9__17_5
+	Action_1_t069366F3AD155AB4638C995045E0A7F46361C0C6* ___U3CU3E9__17_5_8;
+	// System.Action`1<GoogleMobileAds.Api.AdValue> Reward/<>c::<>9__18_0
+	Action_1_t96EA761F7BE52B89F4904338B4DF546EB9F1FAFF* ___U3CU3E9__18_0_9;
+	// System.Action Reward/<>c::<>9__18_1
+	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___U3CU3E9__18_1_10;
+	// System.Action Reward/<>c::<>9__18_2
+	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___U3CU3E9__18_2_11;
+	// System.Action Reward/<>c::<>9__18_3
+	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___U3CU3E9__18_3_12;
+	// System.Action`1<GoogleMobileAds.Api.AdError> Reward/<>c::<>9__18_5
+	Action_1_t069366F3AD155AB4638C995045E0A7F46361C0C6* ___U3CU3E9__18_5_13;
 };
 
 // GoogleMobileAds.Api.RewardedAd/<Load>c__AnonStorey0
@@ -13114,10 +13112,10 @@ struct RaceManager_tE062607EBBE8BBCAD52A219FF4B337F2638E25B9  : public MonoBehav
 // Reward
 struct Reward_tC5A69688EEA121B283340C062FCA9A307468CCF1  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
+	// UnityEngine.UI.Toggle Reward::Musick
+	Toggle_tBF13F3EBA485E06826FD8A38F4B4C1380DF21A1F* ___Musick_4;
 	// MoneyHandler Reward::MoneyHandler
-	MoneyHandler_t7436E0F4281E063028327E991B33DD5BAAD47132* ___MoneyHandler_4;
-	// System.Int32 Reward::i
-	int32_t ___i_5;
+	MoneyHandler_t7436E0F4281E063028327E991B33DD5BAAD47132* ___MoneyHandler_5;
 	// GoogleMobileAds.Api.InterstitialAd Reward::_interstitialAd
 	InterstitialAd_t41640B3957C2B66FA5F6F38A4805393B6B013FEC* ____interstitialAd_6;
 	// GoogleMobileAds.Api.RewardedAd Reward::_rewardedAd
@@ -15939,12 +15937,12 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3591[23] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3592[36] = 
 {
 	static_cast<int32_t>(offsetof(RaceManager_tE062607EBBE8BBCAD52A219FF4B337F2638E25B9, ___Test_4)),static_cast<int32_t>(offsetof(RaceManager_tE062607EBBE8BBCAD52A219FF4B337F2638E25B9, ___EnemyRacePlayer_5)),static_cast<int32_t>(offsetof(RaceManager_tE062607EBBE8BBCAD52A219FF4B337F2638E25B9, ___EnemyRace_6)),static_cast<int32_t>(offsetof(RaceManager_tE062607EBBE8BBCAD52A219FF4B337F2638E25B9, ___EnemyRb_7)),static_cast<int32_t>(offsetof(RaceManager_tE062607EBBE8BBCAD52A219FF4B337F2638E25B9, ___PlayerRb_8)),static_cast<int32_t>(offsetof(RaceManager_tE062607EBBE8BBCAD52A219FF4B337F2638E25B9, ___EnemyMuweRace_9)),static_cast<int32_t>(offsetof(RaceManager_tE062607EBBE8BBCAD52A219FF4B337F2638E25B9, ___PlayerMuweRace_10)),static_cast<int32_t>(offsetof(RaceManager_tE062607EBBE8BBCAD52A219FF4B337F2638E25B9, ___BorderFinish_11)),static_cast<int32_t>(offsetof(RaceManager_tE062607EBBE8BBCAD52A219FF4B337F2638E25B9, ___Canvas_12)),static_cast<int32_t>(offsetof(RaceManager_tE062607EBBE8BBCAD52A219FF4B337F2638E25B9, ___Joistick_13)),static_cast<int32_t>(offsetof(RaceManager_tE062607EBBE8BBCAD52A219FF4B337F2638E25B9, ___Winner_14)),static_cast<int32_t>(offsetof(RaceManager_tE062607EBBE8BBCAD52A219FF4B337F2638E25B9, ___Lost_15)),static_cast<int32_t>(offsetof(RaceManager_tE062607EBBE8BBCAD52A219FF4B337F2638E25B9, ___Camera_16)),static_cast<int32_t>(offsetof(RaceManager_tE062607EBBE8BBCAD52A219FF4B337F2638E25B9, ___VirtualCamera_17)),static_cast<int32_t>(offsetof(RaceManager_tE062607EBBE8BBCAD52A219FF4B337F2638E25B9, ___Coldawn_18)),static_cast<int32_t>(offsetof(RaceManager_tE062607EBBE8BBCAD52A219FF4B337F2638E25B9, ___TimeStart_19)),static_cast<int32_t>(offsetof(RaceManager_tE062607EBBE8BBCAD52A219FF4B337F2638E25B9, ___isstart_20)),static_cast<int32_t>(offsetof(RaceManager_tE062607EBBE8BBCAD52A219FF4B337F2638E25B9, ___isFinish_21)),static_cast<int32_t>(offsetof(RaceManager_tE062607EBBE8BBCAD52A219FF4B337F2638E25B9, ___RaceCountforWinn_22)),static_cast<int32_t>(offsetof(RaceManager_tE062607EBBE8BBCAD52A219FF4B337F2638E25B9, ___RaceCountPlayer_23)),static_cast<int32_t>(offsetof(RaceManager_tE062607EBBE8BBCAD52A219FF4B337F2638E25B9, ___isCheckRacePlayer_24)),static_cast<int32_t>(offsetof(RaceManager_tE062607EBBE8BBCAD52A219FF4B337F2638E25B9, ___RaceCountEnemy_25)),static_cast<int32_t>(offsetof(RaceManager_tE062607EBBE8BBCAD52A219FF4B337F2638E25B9, ___isCheckRaceEnemy_26)),static_cast<int32_t>(offsetof(RaceManager_tE062607EBBE8BBCAD52A219FF4B337F2638E25B9, ___Spedometr_27)),static_cast<int32_t>(offsetof(RaceManager_tE062607EBBE8BBCAD52A219FF4B337F2638E25B9, ___Arrou_28)),static_cast<int32_t>(offsetof(RaceManager_tE062607EBBE8BBCAD52A219FF4B337F2638E25B9, ___StartObject_29)),static_cast<int32_t>(offsetof(RaceManager_tE062607EBBE8BBCAD52A219FF4B337F2638E25B9, ___StartLight_30)),static_cast<int32_t>(offsetof(RaceManager_tE062607EBBE8BBCAD52A219FF4B337F2638E25B9, ___winArrou_31)),static_cast<int32_t>(offsetof(RaceManager_tE062607EBBE8BBCAD52A219FF4B337F2638E25B9, ____targetRotation_32)),static_cast<int32_t>(offsetof(RaceManager_tE062607EBBE8BBCAD52A219FF4B337F2638E25B9, ___rewardMoney_33)),static_cast<int32_t>(offsetof(RaceManager_tE062607EBBE8BBCAD52A219FF4B337F2638E25B9, ___rewardMoneyTextWon_34)),static_cast<int32_t>(offsetof(RaceManager_tE062607EBBE8BBCAD52A219FF4B337F2638E25B9, ___rewardMoneyTextLost_35)),static_cast<int32_t>(offsetof(RaceManager_tE062607EBBE8BBCAD52A219FF4B337F2638E25B9, ___StartAud_36)),static_cast<int32_t>(offsetof(RaceManager_tE062607EBBE8BBCAD52A219FF4B337F2638E25B9, ___MeinAud_37)),static_cast<int32_t>(offsetof(RaceManager_tE062607EBBE8BBCAD52A219FF4B337F2638E25B9, ___Winn_38)),static_cast<int32_t>(offsetof(RaceManager_tE062607EBBE8BBCAD52A219FF4B337F2638E25B9, ___Lose_39)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3593[15] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3593[14] = 
 {
-	static_cast<int32_t>(offsetof(U3CU3Ec_tD324D59E8F3183FEB49DC7AFEC6DFA217257B4AA_StaticFields, ___U3CU3E9_0)),static_cast<int32_t>(offsetof(U3CU3Ec_tD324D59E8F3183FEB49DC7AFEC6DFA217257B4AA_StaticFields, ___U3CU3E9__8_0_1)),static_cast<int32_t>(offsetof(U3CU3Ec_tD324D59E8F3183FEB49DC7AFEC6DFA217257B4AA_StaticFields, ___U3CU3E9__13_0_2)),static_cast<int32_t>(offsetof(U3CU3Ec_tD324D59E8F3183FEB49DC7AFEC6DFA217257B4AA_StaticFields, ___U3CU3E9__14_0_3)),static_cast<int32_t>(offsetof(U3CU3Ec_tD324D59E8F3183FEB49DC7AFEC6DFA217257B4AA_StaticFields, ___U3CU3E9__14_1_4)),static_cast<int32_t>(offsetof(U3CU3Ec_tD324D59E8F3183FEB49DC7AFEC6DFA217257B4AA_StaticFields, ___U3CU3E9__14_2_5)),static_cast<int32_t>(offsetof(U3CU3Ec_tD324D59E8F3183FEB49DC7AFEC6DFA217257B4AA_StaticFields, ___U3CU3E9__14_3_6)),static_cast<int32_t>(offsetof(U3CU3Ec_tD324D59E8F3183FEB49DC7AFEC6DFA217257B4AA_StaticFields, ___U3CU3E9__14_4_7)),static_cast<int32_t>(offsetof(U3CU3Ec_tD324D59E8F3183FEB49DC7AFEC6DFA217257B4AA_StaticFields, ___U3CU3E9__14_5_8)),static_cast<int32_t>(offsetof(U3CU3Ec_tD324D59E8F3183FEB49DC7AFEC6DFA217257B4AA_StaticFields, ___U3CU3E9__15_0_9)),static_cast<int32_t>(offsetof(U3CU3Ec_tD324D59E8F3183FEB49DC7AFEC6DFA217257B4AA_StaticFields, ___U3CU3E9__15_1_10)),static_cast<int32_t>(offsetof(U3CU3Ec_tD324D59E8F3183FEB49DC7AFEC6DFA217257B4AA_StaticFields, ___U3CU3E9__15_2_11)),static_cast<int32_t>(offsetof(U3CU3Ec_tD324D59E8F3183FEB49DC7AFEC6DFA217257B4AA_StaticFields, ___U3CU3E9__15_3_12)),static_cast<int32_t>(offsetof(U3CU3Ec_tD324D59E8F3183FEB49DC7AFEC6DFA217257B4AA_StaticFields, ___U3CU3E9__15_4_13)),static_cast<int32_t>(offsetof(U3CU3Ec_tD324D59E8F3183FEB49DC7AFEC6DFA217257B4AA_StaticFields, ___U3CU3E9__15_5_14)),};
+	static_cast<int32_t>(offsetof(U3CU3Ec_tD324D59E8F3183FEB49DC7AFEC6DFA217257B4AA_StaticFields, ___U3CU3E9_0)),static_cast<int32_t>(offsetof(U3CU3Ec_tD324D59E8F3183FEB49DC7AFEC6DFA217257B4AA_StaticFields, ___U3CU3E9__8_0_1)),static_cast<int32_t>(offsetof(U3CU3Ec_tD324D59E8F3183FEB49DC7AFEC6DFA217257B4AA_StaticFields, ___U3CU3E9__16_0_2)),static_cast<int32_t>(offsetof(U3CU3Ec_tD324D59E8F3183FEB49DC7AFEC6DFA217257B4AA_StaticFields, ___U3CU3E9__17_0_3)),static_cast<int32_t>(offsetof(U3CU3Ec_tD324D59E8F3183FEB49DC7AFEC6DFA217257B4AA_StaticFields, ___U3CU3E9__17_1_4)),static_cast<int32_t>(offsetof(U3CU3Ec_tD324D59E8F3183FEB49DC7AFEC6DFA217257B4AA_StaticFields, ___U3CU3E9__17_2_5)),static_cast<int32_t>(offsetof(U3CU3Ec_tD324D59E8F3183FEB49DC7AFEC6DFA217257B4AA_StaticFields, ___U3CU3E9__17_3_6)),static_cast<int32_t>(offsetof(U3CU3Ec_tD324D59E8F3183FEB49DC7AFEC6DFA217257B4AA_StaticFields, ___U3CU3E9__17_4_7)),static_cast<int32_t>(offsetof(U3CU3Ec_tD324D59E8F3183FEB49DC7AFEC6DFA217257B4AA_StaticFields, ___U3CU3E9__17_5_8)),static_cast<int32_t>(offsetof(U3CU3Ec_tD324D59E8F3183FEB49DC7AFEC6DFA217257B4AA_StaticFields, ___U3CU3E9__18_0_9)),static_cast<int32_t>(offsetof(U3CU3Ec_tD324D59E8F3183FEB49DC7AFEC6DFA217257B4AA_StaticFields, ___U3CU3E9__18_1_10)),static_cast<int32_t>(offsetof(U3CU3Ec_tD324D59E8F3183FEB49DC7AFEC6DFA217257B4AA_StaticFields, ___U3CU3E9__18_2_11)),static_cast<int32_t>(offsetof(U3CU3Ec_tD324D59E8F3183FEB49DC7AFEC6DFA217257B4AA_StaticFields, ___U3CU3E9__18_3_12)),static_cast<int32_t>(offsetof(U3CU3Ec_tD324D59E8F3183FEB49DC7AFEC6DFA217257B4AA_StaticFields, ___U3CU3E9__18_5_13)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3594[8] = 
 {
-	static_cast<int32_t>(offsetof(Reward_tC5A69688EEA121B283340C062FCA9A307468CCF1, ___MoneyHandler_4)),static_cast<int32_t>(offsetof(Reward_tC5A69688EEA121B283340C062FCA9A307468CCF1, ___i_5)),static_cast<int32_t>(offsetof(Reward_tC5A69688EEA121B283340C062FCA9A307468CCF1, ____interstitialAd_6)),static_cast<int32_t>(offsetof(Reward_tC5A69688EEA121B283340C062FCA9A307468CCF1, ____rewardedAd_7)),static_cast<int32_t>(offsetof(Reward_tC5A69688EEA121B283340C062FCA9A307468CCF1, ____bannerView_8)),static_cast<int32_t>(offsetof(Reward_tC5A69688EEA121B283340C062FCA9A307468CCF1, ___InterstitialUntitID_9)),static_cast<int32_t>(offsetof(Reward_tC5A69688EEA121B283340C062FCA9A307468CCF1, ___RewardlUntitID_10)),static_cast<int32_t>(offsetof(Reward_tC5A69688EEA121B283340C062FCA9A307468CCF1, ___BanerID_11)),};
+	static_cast<int32_t>(offsetof(Reward_tC5A69688EEA121B283340C062FCA9A307468CCF1, ___Musick_4)),static_cast<int32_t>(offsetof(Reward_tC5A69688EEA121B283340C062FCA9A307468CCF1, ___MoneyHandler_5)),static_cast<int32_t>(offsetof(Reward_tC5A69688EEA121B283340C062FCA9A307468CCF1, ____interstitialAd_6)),static_cast<int32_t>(offsetof(Reward_tC5A69688EEA121B283340C062FCA9A307468CCF1, ____rewardedAd_7)),static_cast<int32_t>(offsetof(Reward_tC5A69688EEA121B283340C062FCA9A307468CCF1, ____bannerView_8)),static_cast<int32_t>(offsetof(Reward_tC5A69688EEA121B283340C062FCA9A307468CCF1, ___InterstitialUntitID_9)),static_cast<int32_t>(offsetof(Reward_tC5A69688EEA121B283340C062FCA9A307468CCF1, ___RewardlUntitID_10)),static_cast<int32_t>(offsetof(Reward_tC5A69688EEA121B283340C062FCA9A307468CCF1, ___BanerID_11)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3595[1] = 
 {
 	static_cast<int32_t>(offsetof(RotateTowardsCamera_tCEAAEBBFE1CDFD09AC612F2313511A74AE1ADF45, ___mainCamera_4)),};

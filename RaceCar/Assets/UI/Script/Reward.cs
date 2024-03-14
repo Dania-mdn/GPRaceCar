@@ -5,24 +5,36 @@ using UnityEngine.UI;
 
 public class Reward : MonoBehaviour
 {
+    public Toggle Musick;
     public MoneyHandler MoneyHandler;
 
     private InterstitialAd _interstitialAd;
     private RewardedAd _rewardedAd;
     private BannerView _bannerView;
 
-    private string InterstitialUntitID = "ca-app-pub-3940256099942544/1033173712";
-    //private string InterstitialUntitID = "ca-app-pub-9999092264265801/4956975253";
-    private string RewardlUntitID = "ca-app-pub-3940256099942544/5224354917";
-    //private string RewardlUntitID = "cca-app-pub-9999092264265801/3653941376";
-    private string BanerID = "ca-app-pub-3940256099942544/6300978111";
-    //private string BanerID = "ca-app-pub-9999092264265801/9680541096";
+    //private string InterstitialUntitID = "ca-app-pub-3940256099942544/1033173712";
+    private string InterstitialUntitID = "ca-app-pub-9999092264265801/4956975253";
+    //private string RewardlUntitID = "ca-app-pub-3940256099942544/5224354917";
+    private string RewardlUntitID = "cca-app-pub-9999092264265801/3653941376";
+    //private string BanerID = "ca-app-pub-3940256099942544/6300978111";
+    private string BanerID = "ca-app-pub-9999092264265801/9680541096";
 
     private void Awake()
     {
         MobileAds.Initialize(initStatus => { });
     }
     private void OnEnable()
+    {
+        Load();
+        ReqestBanner();
+
+        EventManager.UpgradeAuto += Upgrade;
+    }
+    private void OnDisable()
+    {
+        EventManager.UpgradeAuto -= Upgrade;
+    }
+    private void Load()
     {
         AdRequest adRequest = new AdRequest();
 
@@ -51,11 +63,6 @@ public class Reward : MonoBehaviour
 
         });
 
-        LoadReward();
-        ReqestBanner();
-    }
-    private void LoadReward()
-    {
         AdRequest adRequest0 = new AdRequest();
 
         RewardedAd.Load(RewardlUntitID, adRequest0, (RewardedAd ad, LoadAdError error) =>
@@ -85,10 +92,33 @@ public class Reward : MonoBehaviour
     }
     private void Start()
     {
-        ShowAd();
         if (PlayerPrefs.HasKey("rewardMoney"))
         {
+            ShowAdReward();
+            PlayerPrefs.DeleteKey("rewardMoney");
+        }
+    }
+    private void Upgrade(int i, int j)
+    {
+        if (GetRandomChance(0.2f))
+        {
             ShowAd();
+        }
+    }
+    bool GetRandomChance(float probability)
+    {
+        // Генерируем случайное число от 0 до 1
+        float randomValue = UnityEngine.Random.value;
+
+        // Если случайное число меньше вероятности,
+        // считаем, что событие произошло
+        if (randomValue < probability)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
         }
     }
     public void ShowAd()
@@ -103,6 +133,8 @@ public class Reward : MonoBehaviour
         {
             Debug.LogError("Interstitial ad is not ready yet.");
         }
+
+        Load();
     }
     public void ShowAdReward()
     {
@@ -122,7 +154,7 @@ public class Reward : MonoBehaviour
             Debug.LogError("Rewarded ad is not ready yet.");
         }
 
-        LoadReward();
+        Load();
     }
     private void RegisterEventHandlers0(RewardedAd ad)
     {
@@ -192,8 +224,11 @@ public class Reward : MonoBehaviour
         {
             Debug.Log("Rewarded ad full screen content closed.");
 
-            EventManager.DoPlayAudio();
-            PlayerPrefs.DeleteKey("MuteAudio");
+            if (Musick.isOn == false)
+            {
+                EventManager.DoPlayAudio();
+                PlayerPrefs.DeleteKey("MuteAudio");
+            }
         };
         // Raised when the ad failed to open full screen content.
         ad.OnAdFullScreenContentFailed += (AdError error) =>
