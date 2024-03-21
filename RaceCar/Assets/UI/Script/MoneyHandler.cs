@@ -5,7 +5,7 @@ public class MoneyHandler : MonoBehaviour
 {
     public UIManager UIManager;
     public PartsPositionController PartsPositionController;
-    public float money = 140;
+    public float money = 230;
     private float moneyInSecond = 5;
     public Animation AnimMoneyInSecond;
     private float coldawn = 1;
@@ -48,8 +48,6 @@ public class MoneyHandler : MonoBehaviour
     }
     private void Start()
     {
-        EventManager.DoShowAdd();
-
         if (PlayerPrefs.HasKey("money"))
         {
             if (PlayerPrefs.HasKey("rewardMoney"))
@@ -200,17 +198,20 @@ public class MoneyHandler : MonoBehaviour
     {
         if(IncomCount >= 4)
         {
-            //moneyInSecond = moneyInSecond + (moneyInSecond * 0.3f);
-            moneyInSecond = moneyInSecond + 2;
-            moneyInSecond = Mathf.Clamp(moneyInSecond, 0, 1000000000000000000);
-            PlayerPrefs.SetFloat("moneyInSecond", moneyInSecond);
-            IncomCount = IncomCount - 4;
-            EventManager.DuSetAvalebleIncpmMoney(IncomCount);
-            IncomPriece = IncomPriece + (IncomPriece * 0.3f);
-            IncomPriece = Mathf.Clamp(IncomPriece, 0, 1000000000000000000);
-            PlayerPrefs.SetFloat("IncomPriece", IncomPriece);
-            FormaterCount(Mathf.Round(IncomPriece), UIManager.IncomePrice); 
-            AnimMoneyInSecond.Play();
+            if (money - IncomPriece >= 0)
+            {
+                moneyInSecond = moneyInSecond + 3 + (IncomPriece / 100000);
+                moneyInSecond = Mathf.Clamp(moneyInSecond, 0, 1000000000000000000);
+                PlayerPrefs.SetFloat("moneyInSecond", moneyInSecond);
+                IncomCount = IncomCount - 4;
+                EventManager.DuSetAvalebleIncpmMoney(IncomCount);
+                money = money - IncomPriece;
+                IncomPriece = IncomPriece + (IncomPriece * 0.3f);
+                IncomPriece = Mathf.Clamp(IncomPriece, 0, 1000000000000000000);
+                PlayerPrefs.SetFloat("IncomPriece", IncomPriece);
+                FormaterCount(Mathf.Round(IncomPriece), UIManager.IncomePrice);
+                AnimMoneyInSecond.Play();
+            }
         }
     }
     public void PrepeaToSale(bool isClick)
@@ -268,7 +269,7 @@ public class MoneyHandler : MonoBehaviour
     }
     public void DeleteAll()
     {
-        money = 150;
+        money = 230;
     }
 
     private void FormaterCount(float Value, TextMeshProUGUI TextValue)

@@ -26,7 +26,6 @@ public class Tich : MonoBehaviour
     }
     private void Start()
     {
-        SkipButton.SetActive(true);
 
         if (PlayerPrefs.HasKey("Tich"))
         {
@@ -34,6 +33,8 @@ public class Tich : MonoBehaviour
         }
         else
         {
+            SkipButton.SetActive(true);
+
             if (PlayerPrefs.HasKey("TichFirst"))
             {
                 SkipButton.SetActive(false);
@@ -116,6 +117,7 @@ public class Tich : MonoBehaviour
     }
     public void Skip()
     {
+        Plane[7].SetActive(false);
         PlayerPrefs.SetInt("Tich", 1);
         PartsPositionController.Parts[0] = PartsPosition[0];
         PartsPositionController.Parts[1] = PartsPosition[1];
@@ -125,6 +127,7 @@ public class Tich : MonoBehaviour
         RewardAndSale[2].SetActive(true);
         RewardAndSale[3].SetActive(true);
         Race.SetActive(true);
+        SkipButton.SetActive(false);
         Destroy(gameObject);
     }
     private void SetSpeed(float speed)
