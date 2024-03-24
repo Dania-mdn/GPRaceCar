@@ -12,12 +12,12 @@ public class Reward : MonoBehaviour
     private RewardedAd _rewardedAd;
     private BannerView _bannerView;
 
-    private string InterstitialUntitID = "ca-app-pub-3940256099942544/1033173712";
-    //private string InterstitialUntitID = "ca-app-pub-9999092264265801/4956975253";
-    private string RewardlUntitID = "ca-app-pub-3940256099942544/5224354917";
-    //private string RewardlUntitID = "cca-app-pub-9999092264265801/3653941376";
-    private string BanerID = "ca-app-pub-3940256099942544/6300978111";
-    //private string BanerID = "ca-app-pub-9999092264265801/9680541096";
+    //private string InterstitialUntitID = "ca-app-pub-3940256099942544/1033173712";
+    private string InterstitialUntitID = "ca-app-pub-9999092264265801/4956975253";
+    //private string RewardlUntitID = "ca-app-pub-3940256099942544/5224354917";
+    private string RewardlUntitID = "cca-app-pub-9999092264265801/3653941376";
+    //private string BanerID = "ca-app-pub-3940256099942544/6300978111";
+    private string BanerID = "ca-app-pub-9999092264265801/9680541096";
 
     private void Awake()
     {
